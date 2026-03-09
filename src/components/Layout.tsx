@@ -142,7 +142,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         />
 
         {/* Page content */}
-        <main className="pt-[72px] xl:px-[180px]">{children}</main>
+        <main className="pt-[72px] xl:px-[220px]">{children}</main>
       </div>
 
       {/* FOOTER */}
