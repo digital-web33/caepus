@@ -123,7 +123,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           className="hidden xl:block fixed left-0 top-[72px] bottom-0 w-[220px] z-10 pointer-events-none"
           style={{
             backgroundImage: `url(${personnageImg})`,
-            backgroundSize: "880px 100%",
+            backgroundSize: "1100px 100%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "left top",
           }}
