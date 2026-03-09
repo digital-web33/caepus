@@ -31,7 +31,7 @@ const Galerie = () => {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {images.map((img, i) => (
-              <div key={i} className="overflow-hidden rounded-sm aspect-square border border-primary/10">
+            <div key={i} className="overflow-hidden rounded-2xl aspect-square border border-primary/10 shadow-sm">
                 <img
                   src={img.src}
                   alt={img.alt}
@@ -43,7 +43,7 @@ const Galerie = () => {
             {Array.from({ length: 6 }).map((_, i) => (
               <div
                 key={`placeholder-${i}`}
-                className="aspect-square border-2 border-dashed border-primary/20 rounded-sm flex items-center justify-center bg-primary/5"
+                className="aspect-square border-2 border-dashed border-primary/20 rounded-2xl flex items-center justify-center bg-primary/5"
               >
                 <span className="text-xs text-muted-foreground tracking-widest uppercase">Photo</span>
               </div>
