@@ -123,10 +123,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           className="hidden xl:block fixed left-0 top-[72px] bottom-0 w-[220px] z-10 pointer-events-none"
           style={{
             backgroundImage: `url(${personnageImg})`,
-            backgroundSize: "220px 550px",
+            backgroundSize: "880px auto",
             backgroundRepeat: "repeat-y",
-            backgroundPosition: "center top",
-            opacity: 0.9,
+            backgroundPosition: "left top",
+            opacity: 1,
           }}
         />
         {/* Right illustration border */}
@@ -134,10 +134,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           className="hidden xl:block fixed right-0 top-[72px] bottom-0 w-[220px] z-10 pointer-events-none"
           style={{
             backgroundImage: `url(${personnageImg})`,
-            backgroundSize: "220px 550px",
+            backgroundSize: "880px auto",
             backgroundRepeat: "repeat-y",
-            backgroundPosition: "center top",
-            opacity: 0.9,
+            backgroundPosition: "right top",
+            opacity: 1,
           }}
         />
 
