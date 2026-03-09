@@ -116,32 +116,23 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         )}
       </header>
 
-      {/* Page wrapper with illustration side borders */}
-      <div className="relative">
-        {/* Left illustration border */}
-        <div
-          className="hidden xl:block fixed left-0 top-[72px] bottom-0 w-[220px] z-10 pointer-events-none"
-          style={{
-            backgroundImage: `url(${personnageImg})`,
-            backgroundSize: "220px 100%",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "left top",
-          }}
-        />
-        {/* Right illustration border */}
-        <div
-          className="hidden xl:block fixed right-0 top-[72px] bottom-0 w-[220px] z-10 pointer-events-none"
-          style={{
-            backgroundImage: `url(${personnageImg})`,
-            backgroundSize: "220px 100%",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "right top",
-          }}
-        />
+      {/* Fond plein écran : illustration fixe derrière tout */}
+      <div
+        className="fixed inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage: `url(${personnageImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center top",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
 
-        {/* Page content */}
-        <main className="pt-[72px] xl:px-[220px]">{children}</main>
-      </div>
+      {/* Contenu qui glisse par-dessus le fond */}
+      <main className="relative z-10 pt-[72px]">
+        <div className="max-w-4xl mx-auto bg-background min-h-screen shadow-xl">
+          {children}
+        </div>
+      </main>
 
       {/* FOOTER */}
       <footer className="bg-primary text-primary-foreground xl:mx-0 relative z-20">
