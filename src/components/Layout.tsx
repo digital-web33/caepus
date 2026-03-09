@@ -120,10 +120,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <div className="relative">
         {/* Left illustration border */}
         <div
-          className="hidden xl:block fixed left-0 top-[72px] bottom-0 w-[180px] z-10 pointer-events-none"
+          className="hidden xl:block fixed left-0 top-[72px] bottom-0 w-[220px] z-10 pointer-events-none"
           style={{
             backgroundImage: `url(${personnageImg})`,
-            backgroundSize: "180px auto",
+            backgroundSize: "220px 550px",
             backgroundRepeat: "repeat-y",
             backgroundPosition: "center top",
             opacity: 0.9,
@@ -131,10 +131,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         />
         {/* Right illustration border */}
         <div
-          className="hidden xl:block fixed right-0 top-[72px] bottom-0 w-[180px] z-10 pointer-events-none"
+          className="hidden xl:block fixed right-0 top-[72px] bottom-0 w-[220px] z-10 pointer-events-none"
           style={{
             backgroundImage: `url(${personnageImg})`,
-            backgroundSize: "180px auto",
+            backgroundSize: "220px 550px",
             backgroundRepeat: "repeat-y",
             backgroundPosition: "center top",
             opacity: 0.9,
