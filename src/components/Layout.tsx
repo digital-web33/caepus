@@ -118,12 +118,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       {/* Fond plein écran : illustration fixe derrière tout */}
       <div
-        className="fixed inset-0 z-0 pointer-events-none bg-background"
+        className="fixed inset-0 z-0 pointer-events-none"
         style={{
           backgroundImage: `url(${personnageImg})`,
-          backgroundSize: "600px auto",
-          backgroundPosition: "center top",
-          backgroundRepeat: "repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+          backgroundRepeat: "no-repeat",
         }}
       />
 
