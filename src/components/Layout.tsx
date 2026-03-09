@@ -40,11 +40,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <Link
                   key={l.label}
                   to={l.href}
-                  className={`text-[11px] tracking-[0.15em] font-medium transition-all hover:opacity-80 ${
-                    isActive
-                      ? "text-primary-foreground border-b border-primary-foreground pb-0.5"
-                      : "text-primary-foreground/75"
-                  }`}
+                  className={`relative text-[13px] tracking-[0.18em] font-medium transition-colors duration-200 group
+                    after:absolute after:bottom-[-3px] after:left-0 after:h-[1.5px] after:transition-[width] after:duration-300 after:ease-out
+                    ${isActive
+                      ? "text-[hsl(var(--nav-active))] after:w-full after:bg-[hsl(var(--nav-active))]"
+                      : "text-primary-foreground after:w-0 hover:after:w-full after:bg-primary-foreground"
+                    }`}
                 >
                   {l.label}
                 </Link>
