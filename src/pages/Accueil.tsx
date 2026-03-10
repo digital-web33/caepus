@@ -130,7 +130,7 @@ const Accueil = () => {
             {[
               { title: "Chaque jour", text: "Sur place ou à emporter · Paris 1er — Chaque jour, une nouvelle sélection : plats chauds mijotés, salades fraîches, tartes salées et sucrées, desserts maison." },
               { title: "Fait maison", text: "Cuisine fraîche et de saison, préparée chaque matin à partir des produits du jour." },
-              { title: "Les classiques", text: "Nos recettes signature transmises de génération en génération restent incontournables." },
+              { title: "Les classiques", text: "Bien sûr, les incontournables sont toujours là ! Saumon teriyaki, bowls généreux, bo-bun, soupes chaudes ou froides, sandwichs chauds, banh-mi toasté, smoothies et jus de fruits frais pressés." },
             ].map((item) => (
               <div key={item.title} className="border border-primary-foreground/20 p-7 text-left hover:bg-primary-foreground/5 transition-colors rounded-sm">
                 <h3 className="font-display text-xl font-bold text-primary-foreground mb-3">{item.title}</h3>
