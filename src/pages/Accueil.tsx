@@ -97,13 +97,10 @@ const Accueil = () => {
               <div className="w-8 h-0.5 bg-primary/30" />
               <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
                 <p>
-                  Des collaborateurs soudés et passionnés, impliqués et respectueux du savoir-faire maison.
+                  Plus qu'une équipe, une véritable famille ! Des collaborateurs passionnés, soudés et attachés au savoir-faire maison.
                 </p>
                 <p>
-                  La famille s'agrandit ! En septembre, ouverture du nouveau concept de Cécile et sa fille Léa.
-                </p>
-                <p>
-                  Vous y retrouverez toutes nos tartes salées et sucrées que vous avez adorées depuis la création de Tarte Julie.
+                  La famille s'agrandit ! En septembre, Cécile et sa fille Léa ouvrent un nouveau concept à Neuilly-sur-Seine. Retrouvez-y toutes nos tartes salées et sucrées — celles que vous aimez depuis les débuts de Tarte Julie.
                 </p>
                 <p className="font-medium text-primary/80">
                   À bientôt à Neuilly-sur-Seine et sur Instagram…
