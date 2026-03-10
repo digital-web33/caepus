@@ -77,7 +77,7 @@ const Accueil = () => {
                   Pâte fine, caramel croquant, fruits frais… autant de saveurs qui ont bercé son enfance. Une passion est née. Le fil conducteur de toute cette aventure ? Le bon, le frais, le fait maison.
                 </p>
                 <p className="font-medium text-primary/80">
-                  Chez Caepus, la cuisine est familiale, innovante, originale et ne cesse de se renouveler depuis sa création.
+                  Avec les années, ces valeurs n'ont pas changé. Chez Caepus, la cuisine est familiale, innovante, originale — et elle se renouvelle sans cesse depuis sa création.
                 </p>
               </div>
             </div>
@@ -97,13 +97,10 @@ const Accueil = () => {
               <div className="w-8 h-0.5 bg-primary/30" />
               <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
                 <p>
-                  Des collaborateurs soudés et passionnés, impliqués et respectueux du savoir-faire maison.
+                  Plus qu'une équipe, une véritable famille ! Des collaborateurs passionnés, soudés et attachés au savoir-faire maison.
                 </p>
                 <p>
-                  La famille s'agrandit ! En septembre, ouverture du nouveau concept de Cécile et sa fille Léa.
-                </p>
-                <p>
-                  Vous y retrouverez toutes nos tartes salées et sucrées que vous avez adorées depuis la création de Tarte Julie.
+                  La famille s'agrandit ! En septembre, Cécile et sa fille Léa ouvrent un nouveau concept à Neuilly-sur-Seine. Retrouvez-y toutes nos tartes salées et sucrées — celles que vous aimez depuis les débuts de Tarte Julie.
                 </p>
                 <p className="font-medium text-primary/80">
                   À bientôt à Neuilly-sur-Seine et sur Instagram…
@@ -131,7 +128,7 @@ const Accueil = () => {
           <div className="w-8 h-0.5 bg-primary-foreground/30 mx-auto mb-8" />
           <div className="grid md:grid-cols-3 gap-8 mt-10">
             {[
-              { title: "Chaque jour", text: "Nouveautés, plats chauds mijotés, salades, tartes salées et sucrées, desserts…" },
+              { title: "Chaque jour", text: "Sur place ou à emporter · Paris 1er — Chaque jour, une nouvelle sélection : plats chauds mijotés, salades fraîches, tartes salées et sucrées, desserts maison." },
               { title: "Fait maison", text: "Cuisine fraîche et de saison, préparée chaque matin à partir des produits du jour." },
               { title: "Les classiques", text: "Nos recettes signature transmises de génération en génération restent incontournables." },
             ].map((item) => (
