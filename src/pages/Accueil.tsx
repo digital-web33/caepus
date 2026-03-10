@@ -74,7 +74,7 @@ const Accueil = () => {
                   Caepus, c'est avant tout une histoire de famille qui dure depuis plus de 30 ans. Certains tombent dans la marmite — Cécile, fondatrice de Caepus, est tombée, elle, dans la tarte : celle de sa maman, créatrice de la célèbre marque <em>«&nbsp;Tarte Julie&nbsp;»</em>.
                 </p>
                 <p>
-                  Une pâte fine, un caramel croquant, des fruits frais… autant de saveurs qui ont bercé son enfance. La passion est née.
+                  Pâte fine, caramel croquant, fruits frais… autant de saveurs qui ont bercé son enfance. Une passion est née. Le fil conducteur de toute cette aventure ? Le bon, le frais, le fait maison.
                 </p>
                 <p className="font-medium text-primary/80">
                   Chez Caepus, la cuisine est familiale, innovante, originale et ne cesse de se renouveler depuis sa création.
