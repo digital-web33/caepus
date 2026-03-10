@@ -8,6 +8,8 @@ import Accueil from "./pages/Accueil";
 import Restaurant from "./pages/Restaurant";
 import Traiteur from "./pages/Traiteur";
 import Galerie from "./pages/Galerie";
+import Actualites from "./pages/Actualites";
+import ArticleDetail from "./pages/ArticleDetail";
 import APropos from "./pages/APropos";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -25,6 +27,8 @@ const App = () => (
           <Route path="/restaurant" element={<Layout><Restaurant /></Layout>} />
           <Route path="/traiteur" element={<Layout><Traiteur /></Layout>} />
           <Route path="/galerie" element={<Layout><Galerie /></Layout>} />
+          <Route path="/actualites" element={<Layout><Actualites /></Layout>} />
+          <Route path="/actualites/:slug" element={<Layout><ArticleDetail /></Layout>} />
           <Route path="/a-propos" element={<Layout><APropos /></Layout>} />
           <Route path="/contact" element={<Layout><Contact /></Layout>} />
           <Route path="*" element={<NotFound />} />

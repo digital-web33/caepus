@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Dossier où le client dépose ses images via le CMS
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+# Activer l'éditeur éditorial avec prévisualisation
+publish_mode: editorial_workflow
+
+collections:
+  # ─────────────────────────────────────────────
+  # 1. ACTUALITÉS / ARTICLES
+  # ─────────────────────────────────────────────
+  - name: "actualites"
+    label: "Actualités"
+    label_singular: "Actualité"
+    folder: "src/content/actualites"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Titre", name: "titre", widget: "string" }
+      - { label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Image de couverture", name: "image", widget: "image", required: false, media_folder: "/public/uploads", public_folder: "/uploads" }
+      - { label: "Résumé court", name: "resume", widget: "text", required: false }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+      - { label: "Publié", name: "publie", widget: "boolean", default: true }
+
+  # ─────────────────────────────────────────────
+  # 2. GALERIE (fichier unique JSON)
+  # ─────────────────────────────────────────────
+  - name: "galerie"
+    label: "Galerie"
+    files:
+      - name: "galerie"
+        label: "Photos de la galerie"
+        file: "src/content/galerie.json"
+        fields:
+          - name: "photos"
+            label: "Photos"
+            widget: "list"
+            label_singular: "Photo"
+            fields:
+              - { label: "Image", name: "src", widget: "image", media_folder: "/public/uploads", public_folder: "/uploads" }
+              - { label: "Légende / Alt", name: "alt", widget: "string" }

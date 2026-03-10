@@ -1,0 +1,28 @@
+# ─────────────────────────────────────────────
+# Caepus — Configuration Netlify
+# Compatible : Lovable → GitHub → Netlify
+# CMS       : Decap CMS + Netlify Identity + Git Gateway
+# ─────────────────────────────────────────────
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Nécessaire pour le routing React SPA (react-router-dom)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Activer Netlify Identity (nécessaire pour Decap CMS)
+[dev]
+  command = "npm run dev"
+  port = 8888
+
+# Headers de sécurité
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
