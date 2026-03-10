@@ -20,7 +20,7 @@ const Accueil = () => {
             </h1>
             <div className="w-12 h-0.5 bg-primary/40 my-6" />
             <p className="text-base leading-relaxed text-foreground/70 max-w-sm">
-              Depuis 1989, Caepus perpétue une cuisine familiale, fraîche et passionnée. De mère en fille, la tradition se réinvente.
+              Cuisine familiale, fraîche et faite maison — livrée partout à Paris.
             </p>
             <div className="mt-10 flex flex-col gap-1">
               <p className="text-xs tracking-[0.3em] text-primary/50 uppercase font-medium">De mère en fille</p>
@@ -71,7 +71,7 @@ const Accueil = () => {
               <div className="w-8 h-0.5 bg-primary/30" />
               <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
                 <p>
-                  Certains tombent dans la marmite — Cécile, la fondatrice de Caepus, est tombée dans la tarte : celle de sa maman, fondatrice de la célèbre marque <em>« Tarte Julie »</em>.
+                  Caepus, c'est avant tout une histoire de famille qui dure depuis plus de 30 ans. Certains tombent dans la marmite — Cécile, fondatrice de Caepus, est tombée, elle, dans la tarte : celle de sa maman, créatrice de la célèbre marque <em>«&nbsp;Tarte Julie&nbsp;»</em>.
                 </p>
                 <p>
                   Une pâte fine, un caramel croquant, des fruits frais… autant de saveurs qui ont bercé son enfance. La passion est née.
