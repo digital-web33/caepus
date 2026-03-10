@@ -77,7 +77,7 @@ const Accueil = () => {
                   Pâte fine, caramel croquant, fruits frais… autant de saveurs qui ont bercé son enfance. Une passion est née. Le fil conducteur de toute cette aventure ? Le bon, le frais, le fait maison.
                 </p>
                 <p className="font-medium text-primary/80">
-                  Chez Caepus, la cuisine est familiale, innovante, originale et ne cesse de se renouveler depuis sa création.
+                  Avec les années, ces valeurs n'ont pas changé. Chez Caepus, la cuisine est familiale, innovante, originale — et elle se renouvelle sans cesse depuis sa création.
                 </p>
               </div>
             </div>
