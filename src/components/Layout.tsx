@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Facebook, Instagram } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import logoImg from "@/assets/logo-caepus.jpg";
 import personnageImg from "@/assets/personnage-pattern.jpg";
 
