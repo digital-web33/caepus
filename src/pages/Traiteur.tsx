@@ -63,6 +63,30 @@ const Traiteur = () => {
           </div>
         </div>
       </section>
+      {/* Nos services */}
+      <section className="bg-background border-t border-primary/10">
+        <div className="max-w-4xl mx-auto px-8 py-20">
+          <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">Services inclus</p>
+          <h2 className="font-display text-4xl font-bold text-primary uppercase mb-10">Nos services</h2>
+          <ul className="space-y-4 mb-10">
+            {[
+              "Maîtres d'hôtel expérimentés, disponibles tout au long de votre événement",
+              "Location de matériel (vaisselle, verrerie, buffet, nappage, présentoirs)",
+              "Décoration florale pour vos buffets",
+              "Conseil personnalisé en amont de votre événement",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground/75">
+                <span className="text-primary mt-0.5">•</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-sm leading-relaxed text-foreground/70 italic border-l-2 border-primary/30 pl-6">
+            Découvrez notre carte traiteur : buffets et cocktails clés en main, pour simplifier l'organisation de votre prochain événement.
+          </p>
+        </div>
+      </section>
+
     </div>
   );
 };
