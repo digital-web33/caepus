@@ -71,12 +71,45 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
+/* ── Styles pour le contenu Markdown des articles ── */
+@layer components {
+  .article-body h1,
+  .article-body h2,
+  .article-body h3,
+  .article-body h4 {
+    @apply font-display font-bold text-primary mt-8 mb-3 leading-snug;
+  }
+  .article-body h1 { @apply text-3xl uppercase; }
+  .article-body h2 { @apply text-2xl uppercase; }
+  .article-body h3 { @apply text-xl; }
+
+  .article-body p {
+    @apply text-sm leading-relaxed text-foreground/80 mb-4;
   }
 
-  body {
-    @apply bg-background text-foreground;
+  .article-body ul,
+  .article-body ol {
+    @apply text-sm leading-relaxed text-foreground/80 mb-4 pl-5 space-y-1;
+  }
+  .article-body ul { @apply list-disc; }
+  .article-body ol { @apply list-decimal; }
+
+  .article-body strong { @apply font-semibold text-foreground; }
+  .article-body em    { @apply italic; }
+
+  .article-body a {
+    @apply text-primary underline underline-offset-2 hover:opacity-70 transition-opacity;
+  }
+
+  .article-body blockquote {
+    @apply border-l-4 border-primary/30 pl-4 italic text-foreground/60 my-4;
+  }
+
+  .article-body img {
+    @apply rounded-2xl w-full my-6 shadow-sm border border-primary/10;
+  }
+
+  .article-body hr {
+    @apply border-primary/15 my-8;
   }
 }
