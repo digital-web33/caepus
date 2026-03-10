@@ -8,7 +8,7 @@ const Accueil = () => {
 
       {/* HERO */}
       <section className="min-h-[85vh] flex items-center bg-background">
-        <div className="max-w-4xl mx-auto px-8 py-24 grid md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-5xl mx-auto px-8 py-24 grid md:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-xs tracking-[0.4em] text-primary/60 uppercase font-medium mb-6">
               Fondé en 1989
@@ -43,7 +43,7 @@ const Accueil = () => {
 
       {/* SÉPARATEUR DÉCORATIF */}
       <div className="bg-primary py-5">
-        <div className="max-w-4xl mx-auto px-8 flex items-center justify-center gap-8">
+        <div className="max-w-5xl mx-auto px-8 flex items-center justify-center gap-8">
           {["Le bon", "Le frais", "Le fait maison"].map((val) => (
             <span key={val} className="text-xs tracking-[0.35em] uppercase text-primary-foreground/80 font-medium">
               {val}
@@ -54,7 +54,7 @@ const Accueil = () => {
 
       {/* NOTRE HISTOIRE */}
       <section className="bg-background">
-        <div className="max-w-4xl mx-auto px-8 py-24">
+        <div className="max-w-5xl mx-auto px-8 py-24">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <img
@@ -87,7 +87,7 @@ const Accueil = () => {
 
       {/* ÉQUIPE */}
       <section className="bg-primary/5 border-y border-primary/10">
-        <div className="max-w-4xl mx-auto px-8 py-24">
+        <div className="max-w-5xl mx-auto px-8 py-24">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-5">
               <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">L'équipe</p>
@@ -120,7 +120,7 @@ const Accueil = () => {
 
       {/* LE RESTAURANT – CTA */}
       <section className="bg-primary">
-        <div className="max-w-4xl mx-auto px-8 py-20 text-center">
+        <div className="max-w-5xl mx-auto px-8 py-20 text-center">
           <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/50 mb-4">Sur place ou à emporter</p>
           <h2 className="font-display text-5xl font-bold text-primary-foreground uppercase mb-6">
             Le Restaurant
@@ -145,7 +145,7 @@ const Accueil = () => {
 
       {/* L'ENGAGEMENT */}
       <section className="bg-background border-y border-primary/10">
-        <div className="max-w-4xl mx-auto px-8 py-24">
+        <div className="max-w-5xl mx-auto px-8 py-24">
           <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">L'engagement</p>
           <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase mb-12">
             Nos valeurs

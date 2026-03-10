@@ -52,7 +52,7 @@ const ArticleDetail = () => {
     <div className="pt-20 min-h-screen">
       {/* Hero */}
       <section className="bg-primary/5 border-b border-primary/10">
-        <div className="max-w-3xl mx-auto px-6 py-20">
+        <div className="max-w-5xl mx-auto px-8 py-20">
           <Link
             to="/actualites"
             className="text-xs tracking-[0.25em] uppercase text-primary/50 hover:text-primary transition-colors mb-8 inline-block"
@@ -77,7 +77,7 @@ const ArticleDetail = () => {
 
       {/* Image de couverture */}
       {article.image && (
-        <div className="max-w-3xl mx-auto px-6 pt-10">
+        <div className="max-w-5xl mx-auto px-8 pt-10">
           <img
             src={article.image}
             alt={article.titre}
@@ -88,7 +88,7 @@ const ArticleDetail = () => {
 
       {/* Contenu markdown rendu */}
       <section>
-        <div className="max-w-3xl mx-auto px-6 py-10 pb-24">
+        <div className="max-w-5xl mx-auto px-8 py-10 pb-24">
           <div
             className="article-body text-foreground/80 leading-relaxed space-y-4"
             dangerouslySetInnerHTML={{ __html: article.html }}

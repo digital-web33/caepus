@@ -43,7 +43,7 @@ const Actualites = () => {
     <div className="pt-20 min-h-screen">
       {/* Hero */}
       <section className="bg-primary/5 border-b border-primary/10">
-        <div className="max-w-6xl mx-auto px-6 py-24">
+        <div className="max-w-5xl mx-auto px-8 py-24">
           <h1 className="font-display text-5xl md:text-7xl font-bold text-primary uppercase mb-4">
             Actualités
           </h1>
@@ -55,7 +55,7 @@ const Actualites = () => {
 
       {/* Liste des articles */}
       <section>
-        <div className="max-w-4xl mx-auto px-6 py-20">
+        <div className="max-w-5xl mx-auto px-8 py-20">
           {articles.length === 0 ? (
             <p className="text-center text-muted-foreground text-sm tracking-widest uppercase py-20">
               — Aucune actualité pour le moment —
