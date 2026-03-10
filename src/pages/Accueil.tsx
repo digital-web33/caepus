@@ -139,6 +139,33 @@ const Accueil = () => {
               </div>
             ))}
           </div>
+          <p className="text-xs tracking-[0.3em] uppercase text-primary-foreground/50 mt-8">Ouvert du lundi au samedi, à partir de 11h</p>
+        </div>
+      </section>
+
+      {/* L'ENGAGEMENT */}
+      <section className="bg-background border-y border-primary/10">
+        <div className="max-w-4xl mx-auto px-8 py-24">
+          <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">L'engagement</p>
+          <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase mb-12">
+            Nos valeurs
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="space-y-4">
+              <h3 className="font-display text-2xl font-bold text-primary uppercase">Une charte qualité exigeante</h3>
+              <div className="w-8 h-0.5 bg-primary/30" />
+              <p className="text-sm leading-relaxed text-foreground/70">
+                Nos produits sont sélectionnés avec la plus grande attention. Nous recevons nos livraisons chaque matin pour vous garantir fraîcheur et qualité au quotidien.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="font-display text-2xl font-bold text-primary uppercase">Une entreprise responsable</h3>
+              <div className="w-8 h-0.5 bg-primary/30" />
+              <p className="text-sm leading-relaxed text-foreground/70">
+                Conscients de l'impact environnemental de la vente à emporter, nous privilégions des emballages écologiques (fibres végétales, pulpe de canne, carton recyclé). Pour réduire notre empreinte carbone, toutes nos livraisons à Paris sont assurées à pied, à vélo ou en véhicule électrique.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
