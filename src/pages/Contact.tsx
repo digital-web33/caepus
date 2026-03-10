@@ -3,7 +3,7 @@ const Contact = () => {
     <div className="pt-20 min-h-screen">
       {/* Hero */}
       <section className="bg-primary text-primary-foreground">
-        <div className="max-w-6xl mx-auto px-6 py-24">
+        <div className="max-w-4xl mx-auto px-8 py-24">
           <h1 className="font-display text-5xl md:text-7xl font-bold uppercase mb-4">
             Contact
           </h1>
