@@ -3,7 +3,7 @@ const Traiteur = () => {
     <div className="pt-20 min-h-screen">
       {/* Hero */}
       <section className="bg-primary/5 border-b border-primary/10">
-        <div className="max-w-4xl mx-auto px-8 py-24">
+        <div className="max-w-5xl mx-auto px-8 py-24">
           <h1 className="font-display text-5xl md:text-7xl font-bold text-primary uppercase mb-4 leading-tight">
             Traiteur événementiel à Paris
           </h1>
@@ -15,7 +15,7 @@ const Traiteur = () => {
 
       {/* Intro */}
       <section className="bg-background border-b border-primary/10">
-        <div className="max-w-4xl mx-auto px-8 py-16 space-y-6">
+        <div className="max-w-5xl mx-auto px-8 py-16 space-y-6">
           <p className="text-base leading-relaxed text-foreground/75">
             Depuis plus de 20 ans, nos équipes accompagnent particuliers et entreprises dans l'organisation de leurs événements, pour 10 à 300 convives.
           </p>
@@ -32,7 +32,7 @@ const Traiteur = () => {
 
       {/* Prestations */}
       <section className="bg-primary/5">
-        <div className="max-w-4xl mx-auto px-8 py-20">
+        <div className="max-w-5xl mx-auto px-8 py-20">
           <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">Nos prestations</p>
           <h2 className="font-display text-4xl font-bold text-primary uppercase mb-12">Ce que nous proposons</h2>
           <div className="grid md:grid-cols-2 gap-10">
@@ -63,9 +63,10 @@ const Traiteur = () => {
           </div>
         </div>
       </section>
+
       {/* Nos services */}
       <section className="bg-background border-t border-primary/10">
-        <div className="max-w-4xl mx-auto px-8 py-20">
+        <div className="max-w-5xl mx-auto px-8 py-20">
           <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">Services inclus</p>
           <h2 className="font-display text-4xl font-bold text-primary uppercase mb-10">Nos services</h2>
           <ul className="space-y-4 mb-10">

@@ -7,7 +7,7 @@ const Galerie = () => {
     <div className="pt-20 min-h-screen">
       {/* Hero */}
       <section className="bg-primary/5 border-b border-primary/10">
-        <div className="max-w-6xl mx-auto px-6 py-24">
+        <div className="max-w-5xl mx-auto px-8 py-24">
           <h1 className="font-display text-5xl md:text-7xl font-bold text-primary uppercase mb-4">
             Galerie
           </h1>
@@ -19,7 +19,7 @@ const Galerie = () => {
 
       {/* Grille photos */}
       <section>
-        <div className="max-w-6xl mx-auto px-6 py-20">
+        <div className="max-w-5xl mx-auto px-8 py-20">
           {images.length === 0 && (
             <p className="text-center text-muted-foreground text-sm tracking-widest uppercase mb-12">
               — Les photos apparaîtront ici —

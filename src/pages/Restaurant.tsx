@@ -3,7 +3,7 @@ const Restaurant = () => {
     <div className="pt-20 min-h-screen">
       {/* Hero */}
       <section className="bg-primary text-primary-foreground">
-        <div className="max-w-4xl mx-auto px-8 py-24">
+        <div className="max-w-5xl mx-auto px-8 py-24">
           <h1 className="font-display text-5xl md:text-7xl font-bold uppercase mb-4 leading-tight">
             Plateaux repas à Paris
           </h1>
@@ -15,7 +15,7 @@ const Restaurant = () => {
 
       {/* Intro */}
       <section className="bg-background border-b border-primary/10">
-        <div className="max-w-4xl mx-auto px-8 py-16 space-y-5">
+        <div className="max-w-5xl mx-auto px-8 py-16 space-y-5">
           <p className="text-base leading-relaxed text-foreground/75">
             Depuis 1989, Caepus vous propose des plateaux repas idéaux pour vos repas de travail. Trois formules au choix — Box Duo, Box Découverte et Box Caepus — avec des plats aux noms qui donnent envie : saumon teriyaki, poulet champagne, bo bun de canard, buddha bowl.
           </p>
@@ -27,7 +27,7 @@ const Restaurant = () => {
 
       {/* Formules */}
       <section className="bg-primary/5">
-        <div className="max-w-4xl mx-auto px-8 py-20">
+        <div className="max-w-5xl mx-auto px-8 py-20">
           <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">Nos formules</p>
           <h2 className="font-display text-4xl font-bold text-primary uppercase mb-12">Trois box au choix</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -54,9 +54,10 @@ const Restaurant = () => {
           </div>
         </div>
       </section>
+
       {/* Livraison à domicile */}
       <section className="bg-background border-t border-primary/10">
-        <div className="max-w-4xl mx-auto px-8 py-16">
+        <div className="max-w-5xl mx-auto px-8 py-16">
           <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">Livraison à domicile</p>
           <h2 className="font-display text-4xl font-bold text-primary uppercase mb-6 leading-tight">
             À Paris — Votre déjeuner<br /><span className="italic font-normal">livré à domicile</span>

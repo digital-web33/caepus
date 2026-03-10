@@ -104,14 +104,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       {/* Contenu qui glisse par-dessus le fond */}
       <main className="relative z-10 pt-[72px]">
-        <div className="max-w-4xl mx-auto bg-background min-h-screen shadow-xl">
+        <div className="max-w-5xl mx-auto bg-background min-h-screen shadow-xl">
           {children}
         </div>
       </main>
 
       {/* FOOTER */}
       <footer className="bg-primary text-primary-foreground xl:mx-0 relative z-20">
-        <div className="max-w-4xl mx-auto px-6 py-14 flex flex-col items-center gap-6">
+        <div className="max-w-5xl mx-auto px-6 py-14 flex flex-col items-center gap-6">
           <div className="flex flex-col items-center leading-none gap-1">
             <span className="font-display text-primary-foreground text-3xl tracking-[0.18em] uppercase">Caepus</span>
             <span className="text-primary-foreground/80 text-[8px] tracking-[0.3em] uppercase">Traiteur &amp; Restaurant</span>

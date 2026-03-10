@@ -6,7 +6,7 @@ const APropos = () => {
     <div className="pt-20 min-h-screen">
       {/* Hero */}
       <section className="bg-primary/5 border-b border-primary/10">
-        <div className="max-w-6xl mx-auto px-6 py-24">
+        <div className="max-w-5xl mx-auto px-8 py-24">
           <h1 className="font-display text-5xl md:text-7xl font-bold text-primary uppercase mb-4">
             À Propos
           </h1>
@@ -18,7 +18,7 @@ const APropos = () => {
 
       {/* UN HÉRITAGE FAMILIAL */}
       <section className="border-b border-primary/10">
-        <div className="max-w-6xl mx-auto px-6 py-24">
+        <div className="max-w-5xl mx-auto px-8 py-24">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-center text-primary mb-16 uppercase tracking-wide">
             Un Héritage Familial
           </h2>
@@ -53,7 +53,7 @@ const APropos = () => {
 
       {/* ÉNERGIE & ÉQUIPE */}
       <section>
-        <div className="max-w-6xl mx-auto px-6 py-24">
+        <div className="max-w-5xl mx-auto px-8 py-24">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <img
