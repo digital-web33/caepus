@@ -29,7 +29,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               src={logoImg}
               alt="Caepus — Traiteur & Restaurant"
               className="h-10 w-auto object-contain"
-              style={{ mixBlendMode: "multiply" }}
             />
           </Link>
 
