@@ -23,12 +23,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary shadow-md">
         <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex-shrink-0">
-            <img
-              src={logoImg}
-              alt="Caepus — Traiteur & Restaurant"
-              className="h-10 w-auto object-contain"
-            />
+          <Link to="/" className="flex-shrink-0 flex flex-col items-center leading-none">
+            <span className="font-display text-primary-foreground text-2xl tracking-[0.18em] uppercase">Caepus</span>
+            <span className="text-primary-foreground/80 text-[8px] tracking-[0.3em] uppercase mt-0.5">Traiteur &amp; Restaurant</span>
           </Link>
 
           {/* Desktop Nav */}
