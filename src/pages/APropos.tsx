@@ -3,7 +3,7 @@ import chefPortrait from "@/assets/chef-portrait.jpg";
 
 const APropos = () => {
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="min-h-screen">
       {/* Hero */}
       <section className="bg-primary/5 border-b border-primary/10">
         <div className="max-w-5xl mx-auto px-8 py-24">
