@@ -1,9 +1,9 @@
 const Contact = () => {
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="min-h-screen">
       {/* Hero */}
       <section className="bg-primary text-primary-foreground">
-        <div className="max-w-6xl mx-auto px-6 py-24">
+        <div className="max-w-4xl mx-auto px-8 py-24">
           <h1 className="font-display text-5xl md:text-7xl font-bold uppercase mb-4">
             Contact
           </h1>
@@ -13,9 +13,18 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Intro */}
+      <section className="bg-background border-b border-primary/10">
+        <div className="max-w-4xl mx-auto px-8 py-10">
+          <p className="text-base leading-relaxed text-foreground/75">
+            Notre équipe est à votre écoute du lundi au vendredi de 9h à 18h.
+          </p>
+        </div>
+      </section>
+
       {/* Contenu */}
       <section>
-        <div className="max-w-6xl mx-auto px-6 py-20">
+        <div className="max-w-4xl mx-auto px-8 py-16">
           <div className="grid md:grid-cols-2 gap-16">
             {/* Infos */}
             <div className="space-y-8">
@@ -23,23 +32,23 @@ const Contact = () => {
                 <h2 className="font-display text-3xl font-bold text-primary uppercase mb-6">
                   Nos coordonnées
                 </h2>
-                <div className="space-y-4 text-foreground/80">
+                <div className="space-y-5 text-foreground/80">
                   <div>
                     <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">Adresse</p>
-                    <p className="text-sm">— À compléter —</p>
-                    <p className="text-sm">Neuilly-sur-Seine</p>
+                    <p className="text-sm">75001 Paris</p>
                   </div>
                   <div>
-                    <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">Téléphone</p>
-                    <p className="text-sm">— À compléter —</p>
-                  </div>
-                  <div>
-                    <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">Email</p>
-                    <p className="text-sm">— À compléter —</p>
+                    <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">Téléphones</p>
+                    <p className="text-sm">
+                      <a href="tel:+33777964496" className="hover:text-primary transition-colors">07 77 96 44 96</a>
+                    </p>
+                    <p className="text-sm">
+                      <a href="tel:+33787283859" className="hover:text-primary transition-colors">07 87 28 38 59</a>
+                    </p>
                   </div>
                   <div>
                     <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">Horaires</p>
-                    <p className="text-sm">— À compléter —</p>
+                    <p className="text-sm">Lundi – Vendredi : 9h – 18h</p>
                   </div>
                 </div>
               </div>
