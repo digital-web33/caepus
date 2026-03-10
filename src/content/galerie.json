@@ -1,0 +1,16 @@
+{
+  "photos": [
+    {
+      "src": "/assets/tarts-flatlay.jpg",
+      "alt": "Tartes et pâtisseries Caepus"
+    },
+    {
+      "src": "/assets/hero-portrait.jpg",
+      "alt": "Les fondatrices de Caepus"
+    },
+    {
+      "src": "/assets/chef-portrait.jpg",
+      "alt": "Cécile, fondatrice"
+    }
+  ]
+}
