@@ -54,36 +54,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             })}
           </nav>
 
-          {/* Social + mobile */}
-          <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-3">
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={16} />
-              </a>
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram size={16} />
-              </a>
-            </div>
-            <button
-              className="md:hidden text-primary-foreground"
-              onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Menu"
-            >
-              {menuOpen ? <X size={22} /> : <Menu size={22} />}
-            </button>
-          </div>
+          {/* Mobile burger */}
+          <button
+            className="md:hidden text-primary-foreground"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Menu"
+          >
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
         </div>
 
         {/* Mobile menu */}
