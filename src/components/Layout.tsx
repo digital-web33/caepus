@@ -105,6 +105,19 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       {/* Contenu qui glisse par-dessus le fond */}
       <main className="relative z-10 pt-[72px]">
         <div className="max-w-5xl mx-auto bg-background min-h-screen shadow-xl">
+          {/* Frise décorative pleine largeur — personnages */}
+          <div
+            className="w-full overflow-hidden"
+            style={{ height: "110px" }}
+          >
+            <img
+              src={personnageImg}
+              alt=""
+              aria-hidden="true"
+              className="w-full h-full object-cover object-top"
+              style={{ objectPosition: "center top" }}
+            />
+          </div>
           {children}
         </div>
       </main>
