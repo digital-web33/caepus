@@ -120,7 +120,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             src={logoImg}
             alt="Caepus"
             className="h-16 w-auto object-contain"
-            style={{ mixBlendMode: "multiply" }}
           />
           <p className="text-xs tracking-[0.25em] uppercase text-primary-foreground/60">
             Traiteur · Restaurant · Neuilly-sur-Seine
