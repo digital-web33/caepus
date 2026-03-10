@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
-import logoImg from "@/assets/logo-caepus.png";
+import logoImg from "@/assets/logo-caepus.jpg";
 import personnageImg from "@/assets/personnage-pattern.jpg";
 
 const NAV_LINKS = [
@@ -29,7 +29,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               src={logoImg}
               alt="Caepus — Traiteur & Restaurant"
               className="h-10 w-auto object-contain"
-              style={{ filter: "brightness(0) invert(1)" }}
+              style={{ mixBlendMode: "multiply" }}
             />
           </Link>
 
@@ -121,7 +121,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             src={logoImg}
             alt="Caepus"
             className="h-16 w-auto object-contain"
-            style={{ filter: "brightness(0) invert(1)" }}
+            style={{ mixBlendMode: "multiply" }}
           />
           <p className="text-xs tracking-[0.25em] uppercase text-primary-foreground/60">
             Traiteur · Restaurant · Neuilly-sur-Seine
