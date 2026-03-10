@@ -71,7 +71,7 @@ const Accueil = () => {
               <div className="w-8 h-0.5 bg-primary/30" />
               <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
                 <p>
-                  Certains tombent dans la marmite — Cécile, la fondatrice de Caepus, est tombée dans la tarte : celle de sa maman, fondatrice de la célèbre marque <em>« Tarte Julie »</em>.
+                  Caepus, c'est avant tout une histoire de famille qui dure depuis plus de 30 ans. Certains tombent dans la marmite — Cécile, fondatrice de Caepus, est tombée, elle, dans la tarte : celle de sa maman, créatrice de la célèbre marque <em>«&nbsp;Tarte Julie&nbsp;»</em>.
                 </p>
                 <p>
                   Une pâte fine, un caramel croquant, des fruits frais… autant de saveurs qui ont bercé son enfance. La passion est née.
