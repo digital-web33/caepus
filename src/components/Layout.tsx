@@ -1,16 +1,15 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Facebook, Instagram } from "lucide-react";
 import logoImg from "@/assets/logo-caepus.jpg";
 import personnageImg from "@/assets/personnage-pattern.jpg";
 
 const NAV_LINKS = [
   { label: "Une maison de famille", href: "/" },
-  { label: "Restaurant", href: "/restaurant" },
   { label: "Traiteur", href: "/traiteur" },
+  { label: "Plateaux Repas et lunchbox", href: "/restaurant" },
   { label: "Galerie", href: "/galerie" },
   { label: "Actualités", href: "/actualites" },
-  { label: "À Propos", href: "/a-propos" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -23,29 +22,29 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       {/* NAV */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary shadow-md">
-        <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
             <img
               src={logoImg}
-              alt="Caepus — Traiteur Fondé en 1989"
-              className="h-12 w-auto object-contain"
+              alt="Caepus — Traiteur & Restaurant"
+              className="h-10 w-auto object-contain"
             />
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-7">
+          <nav className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((l) => {
               const isActive = location.pathname === l.href;
               return (
                 <Link
                   key={l.label}
                   to={l.href}
-                  className={`relative text-[13px] tracking-[0.18em] font-medium transition-colors duration-200 group
-                    after:absolute after:bottom-[-3px] after:left-0 after:h-[1.5px] after:transition-[width] after:duration-300 after:ease-out
+                  className={`relative text-[13px] tracking-[0.12em] font-semibold transition-colors duration-200
+                    after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:transition-[width] after:duration-300 after:ease-out
                     ${isActive
                       ? "text-[hsl(var(--nav-active))] after:w-full after:bg-[hsl(var(--nav-active))]"
-                      : "text-primary-foreground after:w-0 hover:after:w-full after:bg-primary-foreground"
+                      : "text-primary-foreground after:w-0 hover:text-primary-foreground/80 hover:after:w-full after:bg-primary-foreground/80"
                     }`}
                 >
                   {l.label}
@@ -74,9 +73,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   key={l.label}
                   to={l.href}
                   onClick={() => setMenuOpen(false)}
-                  className={`block px-6 py-3 text-xs tracking-[0.15em] font-medium transition-opacity hover:opacity-70 ${
+                  className={`block px-6 py-3 text-xs tracking-[0.15em] font-semibold transition-opacity hover:opacity-70 ${
                     isActive
-                      ? "text-primary-foreground border-l-2 border-primary-foreground"
+                      ? "text-[hsl(var(--nav-active))] border-l-2 border-[hsl(var(--nav-active))]"
                       : "text-primary-foreground/80"
                   }`}
                 >
