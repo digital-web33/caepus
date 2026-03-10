@@ -1,9 +1,9 @@
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
-import matter from "gray-matter";
+import { parseFrontmatter } from "@/lib/parseFrontmatter";
 
-// Lecture de tous les fichiers markdown dans src/content/actualites/
-const rawFiles = import.meta.glob("@/content/actualites/*.md", {
+// Chemin relatif obligatoire pour import.meta.glob (pas d'alias @/)
+const rawFiles = import.meta.glob("../content/actualites/*.md", {
   as: "raw",
   eager: true,
 });
@@ -12,23 +12,23 @@ interface Article {
   slug: string;
   titre: string;
   date: string;
-  resume?: string;
-  image?: string;
+  resume: string;
+  image: string;
   publie: boolean;
 }
 
 function parseArticles(): Article[] {
   return Object.entries(rawFiles)
-    .map(([path, raw]) => {
-      const { data } = matter(raw as string);
-      const filename = path.split("/").pop() ?? "";
+    .map(([filePath, raw]) => {
+      const { data } = parseFrontmatter(raw as string);
+      const filename = filePath.split("/").pop() ?? "";
       const slug = filename.replace(/\.md$/, "");
       return {
         slug,
-        titre: data.titre ?? "Sans titre",
-        date: data.date ?? "",
-        resume: data.resume ?? "",
-        image: data.image ?? "",
+        titre: (data.titre as string) ?? "Sans titre",
+        date: (data.date as string) ?? "",
+        resume: (data.resume as string) ?? "",
+        image: (data.image as string) ?? "",
         publie: data.publie !== false,
       };
     })
@@ -80,11 +80,14 @@ const Actualites = () => {
                     )}
                     <div className="p-8 flex flex-col justify-center gap-3">
                       <p className="text-xs tracking-[0.3em] uppercase text-primary/50">
-                        {new Date(article.date).toLocaleDateString("fr-FR", {
-                          day: "numeric",
-                          month: "long",
-                          year: "numeric",
-                        })}
+                        {article.date
+                          ? new Date(article.date).toLocaleDateString("fr-FR", {
+                              day: "numeric",
+                              month: "long",
+                              year: "numeric",
+                              timeZone: "UTC",
+                            })
+                          : ""}
                       </p>
                       <h2 className="font-display text-2xl font-bold text-primary group-hover:opacity-80 transition-opacity">
                         {article.titre}
