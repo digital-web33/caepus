@@ -54,6 +54,19 @@ const Restaurant = () => {
           </div>
         </div>
       </section>
+      {/* Livraison à domicile */}
+      <section className="bg-background border-t border-primary/10">
+        <div className="max-w-4xl mx-auto px-8 py-16">
+          <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">Livraison à domicile</p>
+          <h2 className="font-display text-4xl font-bold text-primary uppercase mb-6 leading-tight">
+            À Paris — Votre déjeuner<br /><span className="italic font-normal">livré à domicile</span>
+          </h2>
+          <div className="w-8 h-0.5 bg-primary/30 mb-6" />
+          <p className="text-base leading-relaxed text-foreground/75 max-w-xl">
+            Déguster nos plats chez vous ? C'est possible ! Du mardi au vendredi, recevez notre sélection de plats chauds ou froids directement à domicile, dans Paris et proche banlieue.
+          </p>
+        </div>
+      </section>
     </div>
   );
 };
