@@ -2,46 +2,89 @@ backend:
   name: git-gateway
   branch: main
 
-# Dossier où le client dépose ses images via le CMS
+# ── Images uploadées par le client ──────────────────
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
-# Activer l'éditeur éditorial avec prévisualisation
+# Mode éditorial : brouillon → en révision → publié
 publish_mode: editorial_workflow
 
+locale: "fr"
+
 collections:
-  # ─────────────────────────────────────────────
-  # 1. ACTUALITÉS / ARTICLES
-  # ─────────────────────────────────────────────
+
+  # ══════════════════════════════════════════════════
+  # 1. ACTUALITÉS — un fichier .md par article
+  # ══════════════════════════════════════════════════
   - name: "actualites"
     label: "Actualités"
     label_singular: "Actualité"
     folder: "src/content/actualites"
     create: true
     delete: true
+    # Nom du fichier généré : YYYY-MM-DD-titre-de-larticle.md
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    # Aperçu dans la liste CMS
+    summary: "{{titre}} — {{date}}"
     fields:
-      - { label: "Titre", name: "titre", widget: "string" }
-      - { label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
-      - { label: "Image de couverture", name: "image", widget: "image", required: false, media_folder: "/public/uploads", public_folder: "/uploads" }
-      - { label: "Résumé court", name: "resume", widget: "text", required: false }
-      - { label: "Contenu", name: "body", widget: "markdown" }
-      - { label: "Publié", name: "publie", widget: "boolean", default: true }
+      - label: "Titre"
+        name: "titre"
+        widget: "string"
+        hint: "Titre affiché sur le site"
 
-  # ─────────────────────────────────────────────
-  # 2. GALERIE (fichier unique JSON)
-  # ─────────────────────────────────────────────
+      - label: "Date de publication"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "DD/MM/YYYY"
+        time_format: false
+        hint: "Date affichée sous le titre"
+
+      - label: "Image de couverture"
+        name: "image"
+        widget: "image"
+        required: false
+        hint: "Image affichée en haut de l'article et dans la liste"
+
+      - label: "Résumé"
+        name: "resume"
+        widget: "text"
+        required: false
+        hint: "Court texte affiché dans la liste des actualités (2-3 lignes)"
+
+      - label: "Contenu de l'article"
+        name: "body"
+        widget: "markdown"
+        hint: "Contenu complet de l'article. Utilisez les boutons de mise en forme."
+
+      - label: "Publié"
+        name: "publie"
+        widget: "boolean"
+        default: true
+        hint: "Décochez pour masquer l'article sans le supprimer"
+
+  # ══════════════════════════════════════════════════
+  # 2. GALERIE — fichier JSON unique avec liste de photos
+  # ══════════════════════════════════════════════════
   - name: "galerie"
-    label: "Galerie"
+    label: "Galerie photos"
     files:
       - name: "galerie"
         label: "Photos de la galerie"
         file: "src/content/galerie.json"
         fields:
-          - name: "photos"
-            label: "Photos"
+          - label: "Photos"
+            name: "photos"
             widget: "list"
             label_singular: "Photo"
+            summary: "{{alt}}"
+            hint: "Ajoutez, supprimez ou réorganisez les photos par glisser-déposer"
             fields:
-              - { label: "Image", name: "src", widget: "image", media_folder: "/public/uploads", public_folder: "/uploads" }
-              - { label: "Légende / Alt", name: "alt", widget: "string" }
+              - label: "Image"
+                name: "src"
+                widget: "image"
+                hint: "Cliquez pour uploader une photo depuis votre ordinateur"
+              - label: "Description (texte alternatif)"
+                name: "alt"
+                widget: "string"
+                hint: "Décrit l'image pour l'accessibilité et le référencement"
