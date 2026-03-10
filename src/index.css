@@ -77,7 +77,8 @@
   .article-body h2,
   .article-body h3,
   .article-body h4 {
-    @apply font-display font-bold text-primary mt-8 mb-3 leading-snug;
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply font-bold text-primary mt-8 mb-3 leading-snug;
   }
   .article-body h1 { @apply text-3xl uppercase; }
   .article-body h2 { @apply text-2xl uppercase; }
@@ -113,3 +114,4 @@
     @apply border-primary/15 my-8;
   }
 }
+
