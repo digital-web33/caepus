@@ -111,7 +111,7 @@ const Accueil = () => {
               <img
                 src={chefPortrait}
                 alt="Cécile, fondatrice de Caepus"
-                className="w-full max-w-sm mx-auto object-cover rounded-sm shadow-lg border border-primary/10"
+                className="w-full max-w-sm mx-auto object-cover rounded-2xl shadow-lg border border-primary/10"
               />
             </div>
           </div>
