@@ -49,6 +49,56 @@
       "src": "/uploads/dessert_10.webp",
       "alt": "Dessert raffiné du restaurant Caepus",
       "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_11.webp",
+      "alt": "Dessert gastronomique du restaurant traiteur Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/lunchbox_0.webp",
+      "alt": "Lunchbox traiteur Caepus à Neuilly-sur-Seine",
+      "category": "Lunchbox"
+    },
+    {
+      "src": "/uploads/lunchbox_1.webp",
+      "alt": "Lunchbox gourmande préparée par Caepus",
+      "category": "Lunchbox"
+    },
+    {
+      "src": "/uploads/lunchbox_2.webp",
+      "alt": "Lunchbox pour déjeuner au bureau à Neuilly-sur-Seine",
+      "category": "Lunchbox"
+    },
+    {
+      "src": "/uploads/lunchbox_3.webp",
+      "alt": "Lunchbox maison du restaurant traiteur Caepus",
+      "category": "Lunchbox"
+    },
+    {
+      "src": "/uploads/lunchbox_4.webp",
+      "alt": "Déjeuner lunchbox proposé par Caepus à Neuilly-sur-Seine",
+      "category": "Lunchbox"
+    },
+    {
+      "src": "/uploads/lunchbox_5.webp",
+      "alt": "Lunchbox traiteur préparée par Caepus",
+      "category": "Lunchbox"
+    },
+    {
+      "src": "/uploads/lunchbox_6.webp",
+      "alt": "Lunchbox fraîche du restaurant Caepus",
+      "category": "Lunchbox"
+    },
+    {
+      "src": "/uploads/lunchbox_7.webp",
+      "alt": "Lunchbox de saison préparée par Caepus",
+      "category": "Lunchbox"
+    },
+    {
+      "src": "/uploads/lunchbox_8.webp",
+      "alt": "Lunchbox artisanale du restaurant Caepus à Neuilly-sur-Seine",
+      "category": "Lunchbox"
     }
   ]
 }
