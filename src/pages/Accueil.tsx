@@ -60,7 +60,7 @@ const Accueil = () => {
               <img
                 src={tartsFlat}
                 alt="Tartes et pâtisseries maison Caepus"
-                className="w-full object-cover rounded-sm shadow-md border border-primary/10"
+                className="w-full object-cover rounded-2xl shadow-md border border-primary/10"
               />
             </div>
             <div className="space-y-5">
