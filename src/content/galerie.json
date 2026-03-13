@@ -1,16 +1,54 @@
 {
   "photos": [
     {
-      "src": "/uploads/tarts-flatlay.jpg",
-      "alt": "Tartes et pâtisseries Caepus"
+      "src": "/uploads/dessert_1.webp",
+      "alt": "Dessert maison du restaurant Caepus à Neuilly-sur-Seine",
+      "category": "Desserts"
     },
     {
-      "src": "/uploads/hero-portrait.jpg",
-      "alt": "Les fondatrices de Caepus"
+      "src": "/uploads/dessert_2.webp",
+      "alt": "Pâtisserie maison du restaurant traiteur Caepus",
+      "category": "Desserts"
     },
     {
-      "src": "/uploads/chef-portrait.jpg",
-      "alt": "Cécile, fondatrice"
+      "src": "/uploads/dessert_3.webp",
+      "alt": "Dessert gourmand préparé par Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_4.webp",
+      "alt": "Dessert artisanal du restaurant Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_5.webp",
+      "alt": "Dessert signature du restaurant traiteur Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_6.webp",
+      "alt": "Pâtisserie du restaurant Caepus à Neuilly-sur-Seine",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_7.webp",
+      "alt": "Dessert maison préparé par Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_8.webp",
+      "alt": "Dessert gourmand du restaurant Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_9.webp",
+      "alt": "Pâtisserie artisanale Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_10.webp",
+      "alt": "Dessert raffiné du restaurant Caepus",
+      "category": "Desserts"
     }
   ]
 }
