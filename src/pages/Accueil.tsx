@@ -28,7 +28,7 @@ const Accueil = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="border border-primary/15 overflow-hidden rounded-sm shadow-lg">
+            <div className="border border-primary/15 overflow-hidden rounded-2xl shadow-lg">
               <img
                 src={heroPortrait}
                 alt="Les fondatrices de Caepus"
@@ -60,7 +60,7 @@ const Accueil = () => {
               <img
                 src={tartsFlat}
                 alt="Tartes et pâtisseries maison Caepus"
-                className="w-full object-cover rounded-sm shadow-md border border-primary/10"
+                className="w-full object-cover rounded-2xl shadow-md border border-primary/10"
               />
             </div>
             <div className="space-y-5">
@@ -111,7 +111,7 @@ const Accueil = () => {
               <img
                 src={chefPortrait}
                 alt="Cécile, fondatrice de Caepus"
-                className="w-full max-w-sm mx-auto object-cover rounded-sm shadow-lg border border-primary/10"
+                className="w-full max-w-sm mx-auto object-cover rounded-2xl shadow-lg border border-primary/10"
               />
             </div>
           </div>
