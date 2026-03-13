@@ -1,59 +1,24 @@
 {
   "photos": [
     {
-      "src": "/uploads/dessert_1.webp",
-      "alt": "Dessert maison du restaurant Caepus à Neuilly-sur-Seine",
-      "category": "Desserts"
+      "src": "/uploads/signature_1.webp",
+      "alt": "Plat signature du restaurant traiteur Caepus à Neuilly-sur-Seine",
+      "category": "Signature"
     },
     {
-      "src": "/uploads/dessert_2.webp",
-      "alt": "Pâtisserie maison du restaurant traiteur Caepus",
-      "category": "Desserts"
+      "src": "/uploads/signature_2.webp",
+      "alt": "Création culinaire du restaurant Caepus à Neuilly-sur-Seine",
+      "category": "Signature"
     },
     {
-      "src": "/uploads/dessert_3.webp",
-      "alt": "Dessert gourmand préparé par Caepus",
-      "category": "Desserts"
+      "src": "/uploads/signature_3.webp",
+      "alt": "Cuisine signature du restaurant traiteur Caepus",
+      "category": "Signature"
     },
     {
-      "src": "/uploads/dessert_4.webp",
-      "alt": "Dessert artisanal du restaurant Caepus",
-      "category": "Desserts"
-    },
-    {
-      "src": "/uploads/dessert_5.webp",
-      "alt": "Dessert signature du restaurant traiteur Caepus",
-      "category": "Desserts"
-    },
-    {
-      "src": "/uploads/dessert_6.webp",
-      "alt": "Pâtisserie du restaurant Caepus à Neuilly-sur-Seine",
-      "category": "Desserts"
-    },
-    {
-      "src": "/uploads/dessert_7.webp",
-      "alt": "Dessert maison préparé par Caepus",
-      "category": "Desserts"
-    },
-    {
-      "src": "/uploads/dessert_8.webp",
-      "alt": "Dessert gourmand du restaurant Caepus",
-      "category": "Desserts"
-    },
-    {
-      "src": "/uploads/dessert_9.webp",
-      "alt": "Pâtisserie artisanale Caepus",
-      "category": "Desserts"
-    },
-    {
-      "src": "/uploads/dessert_10.webp",
-      "alt": "Dessert raffiné du restaurant Caepus",
-      "category": "Desserts"
-    },
-    {
-      "src": "/uploads/dessert_11.webp",
-      "alt": "Dessert gastronomique du restaurant traiteur Caepus",
-      "category": "Desserts"
+      "src": "/uploads/signature_4.webp",
+      "alt": "Spécialité du restaurant Caepus à Neuilly-sur-Seine",
+      "category": "Signature"
     },
     {
       "src": "/uploads/lunchbox_0.webp",
@@ -149,6 +114,86 @@
       "src": "/uploads/offre_traiteur_8.webp",
       "alt": "Spécialité traiteur maison du restaurant Caepus",
       "category": "Offre traiteur"
+    },
+    {
+      "src": "/uploads/offre_traiteur_10.webp",
+      "alt": "Cuisine traiteur raffinée du restaurant Caepus",
+      "category": "Offre traiteur"
+    },
+    {
+      "src": "/uploads/plat_sale_1.webp",
+      "alt": "Plat salé du restaurant Caepus à Neuilly-sur-Seine",
+      "category": "Plats salés"
+    },
+    {
+      "src": "/uploads/plat_sale_2.webp",
+      "alt": "Cuisine maison du restaurant traiteur Caepus",
+      "category": "Plats salés"
+    },
+    {
+      "src": "/uploads/plat_sale_3.webp",
+      "alt": "Plat gourmand préparé par Caepus",
+      "category": "Plats salés"
+    },
+    {
+      "src": "/uploads/plat_sale_4.webp",
+      "alt": "Cuisine salée du restaurant Caepus",
+      "category": "Plats salés"
+    },
+    {
+      "src": "/uploads/dessert_1.webp",
+      "alt": "Dessert maison du restaurant Caepus à Neuilly-sur-Seine",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_2.webp",
+      "alt": "Pâtisserie maison du restaurant traiteur Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_3.webp",
+      "alt": "Dessert gourmand préparé par Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_4.webp",
+      "alt": "Dessert artisanal du restaurant Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_5.webp",
+      "alt": "Dessert signature du restaurant traiteur Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_6.webp",
+      "alt": "Pâtisserie du restaurant Caepus à Neuilly-sur-Seine",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_7.webp",
+      "alt": "Dessert maison préparé par Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_8.webp",
+      "alt": "Dessert gourmand du restaurant Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_9.webp",
+      "alt": "Pâtisserie artisanale Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_10.webp",
+      "alt": "Dessert raffiné du restaurant Caepus",
+      "category": "Desserts"
+    },
+    {
+      "src": "/uploads/dessert_11.webp",
+      "alt": "Dessert gastronomique du restaurant traiteur Caepus",
+      "category": "Desserts"
     }
   ]
 }
