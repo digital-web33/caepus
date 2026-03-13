@@ -99,6 +99,56 @@
       "src": "/uploads/lunchbox_8.webp",
       "alt": "Lunchbox artisanale du restaurant Caepus à Neuilly-sur-Seine",
       "category": "Lunchbox"
+    },
+    {
+      "src": "/uploads/lunchbox_9.webp",
+      "alt": "Déjeuner lunchbox maison du restaurant Caepus",
+      "category": "Lunchbox"
+    },
+    {
+      "src": "/uploads/offre_traiteur_0.webp",
+      "alt": "Buffet traiteur Caepus à Neuilly-sur-Seine",
+      "category": "Offre traiteur"
+    },
+    {
+      "src": "/uploads/offre_traiteur_1.webp",
+      "alt": "Offre traiteur du restaurant Caepus",
+      "category": "Offre traiteur"
+    },
+    {
+      "src": "/uploads/offre_traiteur_2.webp",
+      "alt": "Assortiment traiteur Caepus à Neuilly-sur-Seine",
+      "category": "Offre traiteur"
+    },
+    {
+      "src": "/uploads/offre_traiteur_3.webp",
+      "alt": "Spécialités traiteur proposées par Caepus",
+      "category": "Offre traiteur"
+    },
+    {
+      "src": "/uploads/offre_traiteur_4.webp",
+      "alt": "Sélection traiteur du restaurant Caepus",
+      "category": "Offre traiteur"
+    },
+    {
+      "src": "/uploads/offre_traiteur_5.webp",
+      "alt": "Cuisine traiteur Caepus pour événements",
+      "category": "Offre traiteur"
+    },
+    {
+      "src": "/uploads/offre_traiteur_6.webp",
+      "alt": "Buffet et offre traiteur Caepus",
+      "category": "Offre traiteur"
+    },
+    {
+      "src": "/uploads/offre_traiteur_7.webp",
+      "alt": "Créations traiteur du restaurant Caepus",
+      "category": "Offre traiteur"
+    },
+    {
+      "src": "/uploads/offre_traiteur_8.webp",
+      "alt": "Spécialité traiteur maison du restaurant Caepus",
+      "category": "Offre traiteur"
     }
   ]
 }
