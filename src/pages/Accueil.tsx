@@ -28,7 +28,7 @@ const Accueil = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="border border-primary/15 overflow-hidden rounded-sm shadow-lg">
+            <div className="border border-primary/15 overflow-hidden rounded-2xl shadow-lg">
               <img
                 src={heroPortrait}
                 alt="Les fondatrices de Caepus"
