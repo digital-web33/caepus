@@ -12,6 +12,9 @@ import Actualites from "./pages/Actualites";
 import ArticleDetail from "./pages/ArticleDetail";
 import APropos from "./pages/APropos";
 import Contact from "./pages/Contact";
+import MentionsLegales from "./pages/MentionsLegales";
+import CGV from "./pages/CGV";
+import Cookies from "./pages/Cookies";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +34,9 @@ const App = () => (
           <Route path="/actualites/:slug" element={<Layout><ArticleDetail /></Layout>} />
           <Route path="/a-propos" element={<Layout><APropos /></Layout>} />
           <Route path="/contact" element={<Layout><Contact /></Layout>} />
+          <Route path="/mentions-legales" element={<Layout><MentionsLegales /></Layout>} />
+          <Route path="/cgv" element={<Layout><CGV /></Layout>} />
+          <Route path="/cookies" element={<Layout><Cookies /></Layout>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
