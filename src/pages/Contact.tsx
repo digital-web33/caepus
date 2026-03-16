@@ -165,25 +165,14 @@ const Contact = () => {
           <h2 className="font-display text-3xl font-bold text-primary italic font-normal mb-10">
             Ils nous font confiance
           </h2>
-          <div className="grid grid-cols-3 sm:grid-cols-5 gap-x-8 gap-y-10 items-center justify-items-center">
-            {[
-              "Samsonite",
-              "CHANEL",
-              "BALMAIN",
-              "Leroy Merlin",
-              "DARPHIN",
-              "ERES",
-              "TOM FORD",
-              "WHITE & CASE",
-              "Shearman & Sterling",
-              "Racine Avocats",
-            ].map((brand) => (
-              <span
-                key={brand}
-                className="text-foreground/50 font-semibold text-sm tracking-wide uppercase hover:text-primary transition-colors"
-              >
-                {brand}
-              </span>
+          <div className="grid grid-cols-3 sm:grid-cols-5 gap-x-10 gap-y-8 items-center justify-items-center">
+            {brands.map((brand) => (
+              <img
+                key={brand.alt}
+                src={brand.src}
+                alt={brand.alt}
+                className="h-10 w-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+              />
             ))}
           </div>
         </div>
