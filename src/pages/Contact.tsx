@@ -134,6 +134,36 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      {/* Ils nous font confiance */}
+      <section className="bg-primary/5 border-t border-primary/10">
+        <div className="max-w-4xl mx-auto px-8 py-16 text-center">
+          <h2 className="font-display text-3xl font-bold text-primary italic font-normal mb-10">
+            Ils nous font confiance
+          </h2>
+          <div className="grid grid-cols-3 sm:grid-cols-5 gap-x-8 gap-y-10 items-center justify-items-center">
+            {[
+              "Samsonite",
+              "CHANEL",
+              "BALMAIN",
+              "Leroy Merlin",
+              "DARPHIN",
+              "ERES",
+              "TOM FORD",
+              "WHITE & CASE",
+              "Shearman & Sterling",
+              "Racine Avocats",
+            ].map((brand) => (
+              <span
+                key={brand}
+                className="text-foreground/50 font-semibold text-sm tracking-wide uppercase hover:text-primary transition-colors"
+              >
+                {brand}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
