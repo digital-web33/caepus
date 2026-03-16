@@ -1,3 +1,27 @@
+import logoSamsonite from "@/assets/logo-samsonite.png";
+import logoChanel from "@/assets/logo-chanel.png";
+import logoBalmain from "@/assets/logo-balmain.png";
+import logoLeroyMerlin from "@/assets/logo-leroy-merlin.png";
+import logoDarphin from "@/assets/logo-darphin.png";
+import logoEres from "@/assets/logo-eres.png";
+import logoTomFord from "@/assets/logo-tomford.png";
+import logoWhiteCase from "@/assets/logo-whitecase.png";
+import logoShearman from "@/assets/logo-shearman.png";
+import logoRacine from "@/assets/logo-racine.png";
+
+const brands = [
+  { src: logoSamsonite, alt: "Samsonite" },
+  { src: logoChanel, alt: "Chanel" },
+  { src: logoBalmain, alt: "Balmain" },
+  { src: logoLeroyMerlin, alt: "Leroy Merlin" },
+  { src: logoDarphin, alt: "Darphin Paris" },
+  { src: logoEres, alt: "Eres" },
+  { src: logoTomFord, alt: "Tom Ford" },
+  { src: logoWhiteCase, alt: "White & Case" },
+  { src: logoShearman, alt: "Shearman & Sterling" },
+  { src: logoRacine, alt: "Racine Avocats" },
+];
+
 const Contact = () => {
   return (
     <div className="min-h-screen">
@@ -141,25 +165,14 @@ const Contact = () => {
           <h2 className="font-display text-3xl font-bold text-primary italic font-normal mb-10">
             Ils nous font confiance
           </h2>
-          <div className="grid grid-cols-3 sm:grid-cols-5 gap-x-8 gap-y-10 items-center justify-items-center">
-            {[
-              "Samsonite",
-              "CHANEL",
-              "BALMAIN",
-              "Leroy Merlin",
-              "DARPHIN",
-              "ERES",
-              "TOM FORD",
-              "WHITE & CASE",
-              "Shearman & Sterling",
-              "Racine Avocats",
-            ].map((brand) => (
-              <span
-                key={brand}
-                className="text-foreground/50 font-semibold text-sm tracking-wide uppercase hover:text-primary transition-colors"
-              >
-                {brand}
-              </span>
+          <div className="grid grid-cols-3 sm:grid-cols-5 gap-x-10 gap-y-8 items-center justify-items-center">
+            {brands.map((brand) => (
+              <img
+                key={brand.alt}
+                src={brand.src}
+                alt={brand.alt}
+                className="h-10 w-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+              />
             ))}
           </div>
         </div>
