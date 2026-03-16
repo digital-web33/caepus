@@ -1,3 +1,27 @@
+import logoSamsonite from "@/assets/logo-samsonite.png";
+import logoChanel from "@/assets/logo-chanel.png";
+import logoBalmain from "@/assets/logo-balmain.png";
+import logoLeroyMerlin from "@/assets/logo-leroy-merlin.png";
+import logoDarphin from "@/assets/logo-darphin.png";
+import logoEres from "@/assets/logo-eres.png";
+import logoTomFord from "@/assets/logo-tomford.png";
+import logoWhiteCase from "@/assets/logo-whitecase.png";
+import logoShearman from "@/assets/logo-shearman.png";
+import logoRacine from "@/assets/logo-racine.png";
+
+const brands = [
+  { src: logoSamsonite, alt: "Samsonite" },
+  { src: logoChanel, alt: "Chanel" },
+  { src: logoBalmain, alt: "Balmain" },
+  { src: logoLeroyMerlin, alt: "Leroy Merlin" },
+  { src: logoDarphin, alt: "Darphin Paris" },
+  { src: logoEres, alt: "Eres" },
+  { src: logoTomFord, alt: "Tom Ford" },
+  { src: logoWhiteCase, alt: "White & Case" },
+  { src: logoShearman, alt: "Shearman & Sterling" },
+  { src: logoRacine, alt: "Racine Avocats" },
+];
+
 const Contact = () => {
   return (
     <div className="min-h-screen">
