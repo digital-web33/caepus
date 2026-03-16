@@ -88,6 +88,26 @@ const Traiteur = () => {
         </div>
       </section>
 
+      {/* Carte traiteur – téléchargement */}
+      <section className="bg-primary/5 border-t border-primary/10">
+        <div className="max-w-5xl mx-auto px-8 py-20 text-center">
+          <h2 className="font-display text-4xl font-bold text-primary mb-4">
+            Notre carte traiteur
+          </h2>
+          <p className="text-sm leading-relaxed text-foreground/70 max-w-xl mx-auto mb-8">
+            Vous y trouverez quelques idées de buffets, cocktails clé en main, tout pour vous faciliter la vie.
+          </p>
+          <a
+            href="#"
+            className="inline-block bg-primary text-primary-foreground px-8 py-4 text-sm tracking-[0.15em] uppercase font-medium hover:bg-primary/90 transition-colors rounded-sm cursor-not-allowed opacity-60"
+            aria-disabled="true"
+          >
+            Télécharger la carte buffet – cocktail
+          </a>
+          <p className="text-xs text-muted-foreground mt-4 italic">Lien à venir</p>
+        </div>
+      </section>
+
     </div>
   );
 };
