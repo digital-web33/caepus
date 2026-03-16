@@ -1,11 +1,16 @@
+import lunchbox0 from "/uploads/lunchbox_0.webp";
+import lunchbox1 from "/uploads/lunchbox_1.webp";
+
 const Restaurant = () => {
   return (
     <div className="min-h-screen">
+
       {/* Hero */}
       <section className="bg-primary text-primary-foreground">
         <div className="max-w-5xl mx-auto px-8 py-24">
           <h1 className="font-display text-5xl md:text-7xl font-bold uppercase mb-4 leading-tight">
-            Plateaux repas à Paris
+            Plateaux repas<br />
+            <span className="italic font-normal text-primary-foreground/80">& lunchbox</span>
           </h1>
           <p className="text-sm tracking-[0.3em] uppercase text-primary-foreground/60">
             Livrés rue Duphot et partout à Paris
@@ -13,49 +18,94 @@ const Restaurant = () => {
         </div>
       </section>
 
-      {/* Intro */}
+      {/* Plateaux repas */}
       <section className="bg-background border-b border-primary/10">
-        <div className="max-w-5xl mx-auto px-8 py-16 space-y-5">
-          <p className="text-base leading-relaxed text-foreground/75">
-            Depuis 1989, Caepus vous propose des plateaux repas idéaux pour vos repas de travail. Trois formules au choix — Box Duo, Box Découverte et Box Caepus — avec des plats aux noms qui donnent envie : saumon teriyaki, poulet champagne, bo bun de canard, buddha bowl.
-          </p>
-          <p className="text-base leading-relaxed text-foreground/75">
-            Produits frais, préparés le matin de la livraison. Livraison à Paris dans un rayon de 10 km autour de la rue Duphot (Paris 1er).
-          </p>
-        </div>
-      </section>
-
-      {/* Formules */}
-      <section className="bg-primary/5">
         <div className="max-w-5xl mx-auto px-8 py-20">
-          <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">Nos formules</p>
-          <h2 className="font-display text-4xl font-bold text-primary uppercase mb-12">Trois box au choix</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Box Duo",
-                text: "Idéale pour un repas à deux, avec une sélection de plats du moment et un dessert maison.",
-              },
-              {
-                title: "Box Découverte",
-                text: "Pour explorer toutes nos saveurs : entrée, plat, dessert — un vrai repas complet préparé avec soin.",
-              },
-              {
-                title: "Box Caepus",
-                text: "Notre formule signature : les meilleurs plats de la maison, sélectionnés par Cécile et son équipe.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="border border-primary/20 p-8 hover:bg-primary/5 transition-colors">
-                <h3 className="font-display text-2xl font-bold text-primary mb-3">{item.title}</h3>
-                <div className="w-8 h-0.5 bg-primary/40 mb-4" />
-                <p className="text-foreground/75 leading-relaxed text-sm">{item.text}</p>
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+
+            {/* Image */}
+            <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10">
+              <img
+                src={lunchbox0}
+                alt="Plateau repas Caepus"
+                className="w-full h-full object-cover aspect-[4/3]"
+              />
+            </div>
+
+            {/* Texte */}
+            <div className="space-y-5">
+              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Plateaux repas</p>
+              <h2 className="font-display text-4xl font-bold text-primary leading-tight">
+                Plateaux repas
+              </h2>
+              <div className="w-8 h-0.5 bg-primary/30" />
+              <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
+                <p>
+                  Nos plateaux repas sont confectionnés le matin même, dans notre laboratoire de la rue Duphot.
+                  Nous sélectionnons avec soin nos produits, qui sont frais et majoritairement de saison.
+                </p>
+                <p>
+                  Caepus, c'est aussi un traiteur engagé — tous nos emballages sont en fibres végétales, pulpe de canne, carton recyclé, nos couverts sont en bois & bambou.
+                </p>
+                <p className="text-primary/80 font-medium">
+                  Bon à savoir 😉<br />
+                  Vous pouvez composer vos plateaux selon vos envies… Contactez-nous !<br />
+                  Tous nos plateaux peuvent être adaptés <span className="uppercase tracking-wide">sans gluten</span>.
+                </p>
               </div>
-            ))}
+              <a
+                href="#"
+                aria-disabled="true"
+                className="inline-block mt-2 bg-primary text-primary-foreground px-7 py-3 text-xs tracking-[0.15em] uppercase font-medium hover:bg-primary/90 transition-colors rounded-sm opacity-60 cursor-not-allowed"
+              >
+                Télécharger la carte des plateaux repas
+              </a>
+              <p className="text-xs text-muted-foreground italic">Lien à venir</p>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* Livraison à domicile */}
+      {/* Lunchbox */}
+      <section className="bg-primary/5 border-b border-primary/10">
+        <div className="max-w-5xl mx-auto px-8 py-20">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+
+            {/* Texte */}
+            <div className="space-y-5">
+              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Lunchbox</p>
+              <h2 className="font-display text-4xl font-bold text-primary leading-tight">
+                Lunchbox
+              </h2>
+              <div className="w-8 h-0.5 bg-primary/30" />
+              <p className="text-sm leading-relaxed text-foreground/70">
+                Nos lunchbox sont gourmandes et généreuses. Idéales pour un event de dernière minute, un shooting, ou un déjeuner groupé entre collaborateurs…
+              </p>
+              <a
+                href="#"
+                aria-disabled="true"
+                className="inline-block mt-2 bg-primary text-primary-foreground px-7 py-3 text-xs tracking-[0.15em] uppercase font-medium hover:bg-primary/90 transition-colors rounded-sm opacity-60 cursor-not-allowed"
+              >
+                Télécharger la carte des lunchbox
+              </a>
+              <p className="text-xs text-muted-foreground italic">Lien à venir</p>
+            </div>
+
+            {/* Image */}
+            <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10">
+              <img
+                src={lunchbox1}
+                alt="Lunchbox Caepus"
+                className="w-full h-full object-cover aspect-[4/3]"
+              />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Livraison */}
       <section className="bg-background border-t border-primary/10">
         <div className="max-w-5xl mx-auto px-8 py-16">
           <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">Livraison à domicile</p>
@@ -68,6 +118,7 @@ const Restaurant = () => {
           </p>
         </div>
       </section>
+
     </div>
   );
 };
