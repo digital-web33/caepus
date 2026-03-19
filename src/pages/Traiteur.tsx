@@ -1,13 +1,30 @@
+import heroImg from "@/assets/traiteur-hero.jpg";
+
 const Traiteur = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero */}
-      <section className="bg-primary/5 border-b border-primary/10">
-        <div className="max-w-5xl mx-auto px-8 py-24">
-          <h1 className="font-display text-4xl md:text-5xl font-extralight text-primary tracking-[0.18em] uppercase mb-4 leading-snug">
+      {/* Hero image */}
+      <section className="relative overflow-hidden border-b border-primary/20" style={{ height: "480px" }}>
+        {/* Photo */}
+        <img
+          src={heroImg}
+          alt="Traiteur événementiel Caepus"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+        {/* Dégradé bas vers crème pour une transition douce */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.08) 45%, hsl(42,47%,95%) 100%)",
+          }}
+        />
+        {/* Contenu texte superposé */}
+        <div className="absolute bottom-0 left-0 right-0 px-10 pb-10">
+          <h1 className="font-display text-4xl md:text-5xl font-extralight text-white tracking-[0.18em] uppercase mb-3 leading-snug drop-shadow-md">
             Traiteur <span className="font-semibold">événementiel</span> à Paris
           </h1>
-          <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground font-bold">
+          <p className="text-xs tracking-[0.32em] uppercase text-white/80 font-semibold drop-shadow">
             Une offre sur-mesure pour vos événements professionnels et privés
           </p>
         </div>
