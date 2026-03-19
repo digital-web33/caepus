@@ -9,18 +9,16 @@ const Traiteur = () => {
           src={heroImg}
           alt="Traiteur événementiel Caepus"
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: "center 65%" }}
+          style={{ objectPosition: "50% 100%" }}
         />
-        {/* Masque le haut de l'image (texte gravé dans l'asset) */}
-        <div className="absolute top-0 left-0 right-0 h-[45%] bg-gradient-to-b from-black/80 via-black/40 to-transparent z-10" />
         <div
-          className="absolute inset-0 z-10"
+          className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.55) 70%, hsl(42,47%,95%) 100%)",
+              "linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.6) 65%, hsl(42,47%,95%) 100%)",
           }}
         />
-        <div className="absolute bottom-0 left-0 right-0 z-20 flex flex-col justify-end px-6 md:px-10 pb-8 md:pb-16">
+        <div className="absolute bottom-0 left-0 right-0 flex flex-col justify-end px-6 md:px-10 pb-8 md:pb-16">
           <h1 className="font-display text-2xl sm:text-4xl md:text-6xl font-extralight text-white tracking-[0.12em] md:tracking-[0.18em] uppercase mb-2 md:mb-3 leading-tight drop-shadow-lg">
             Traiteur <span className="font-semibold text-[hsl(var(--nav-active))]">événementiel</span> à Paris
           </h1>
