@@ -4,28 +4,25 @@ const Traiteur = () => {
   return (
     <div className="min-h-screen">
       {/* Hero image */}
-      <section className="relative overflow-hidden" style={{ height: "500px" }}>
-        {/* Photo recadrée sur les finger food en bas */}
+      <section className="relative overflow-hidden h-[320px] sm:h-[420px] md:h-[500px]">
         <img
           src={heroImg}
           alt="Traiteur événementiel Caepus"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: "center 88%" }}
         />
-        {/* Dégradé sombre en bas pour lisibilité du texte, puis fondu crème */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.55) 60%, hsl(42,47%,95%) 100%)",
+              "linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.6) 65%, hsl(42,47%,95%) 100%)",
           }}
         />
-        {/* Texte centré verticalement dans la zone sombre */}
-        <div className="absolute inset-0 flex flex-col justify-end px-10 pb-16">
-          <h1 className="font-display text-4xl md:text-6xl font-extralight text-white tracking-[0.18em] uppercase mb-3 leading-tight drop-shadow-lg">
+        <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-10 pb-10 md:pb-16">
+          <h1 className="font-display text-2xl sm:text-4xl md:text-6xl font-extralight text-white tracking-[0.12em] md:tracking-[0.18em] uppercase mb-2 md:mb-3 leading-tight drop-shadow-lg">
             Traiteur <span className="font-semibold text-[hsl(var(--nav-active))]">événementiel</span> à Paris
           </h1>
-          <p className="text-xs tracking-[0.32em] uppercase text-white/70 font-semibold">
+          <p className="text-[10px] md:text-xs tracking-[0.25em] md:tracking-[0.32em] uppercase text-white/70 font-semibold leading-relaxed">
             Une offre sur-mesure pour vos événements professionnels et privés
           </p>
         </div>
