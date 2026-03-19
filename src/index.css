@@ -8,7 +8,7 @@
   :root {
     /* Caepus green palette */
     --background: 42 47% 95%;        /* crème chaude */
-    --foreground: 150 40% 12%;       /* vert très foncé */
+    --foreground: 0 0% 8%;           /* noir */
 
     --card: 42 47% 97%;
     --card-foreground: 150 40% 12%;
@@ -66,8 +66,17 @@
     font-family: 'Jost', sans-serif;
   }
 
-  h1, h2, h3, h4 {
+  h1, h2 {
     font-family: 'Playfair Display', serif;
+    color: hsl(var(--primary));
+  }
+
+  h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+
+  p, li, span:not([class*="text-primary"]):not([class*="text-"]) {
+    color: hsl(0 0% 10%);
   }
 }
 
