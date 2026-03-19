@@ -79,12 +79,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               );
             })}
             <div className="flex items-center gap-4 px-6 py-3 border-t border-primary-foreground/10">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground">
+              <span className="text-primary-foreground/70 cursor-default">
                 <Facebook size={16} />
-              </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground">
+              </span>
+              <span className="text-primary-foreground/70 cursor-default">
                 <Instagram size={16} />
-              </a>
+              </span>
             </div>
           </div>
         )}
@@ -120,24 +120,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             Traiteur · Restaurant · Neuilly-sur-Seine
           </p>
           <div className="flex items-center gap-5">
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
-              aria-label="Facebook"
-            >
+            <span className="text-primary-foreground/60 cursor-default" aria-label="Facebook">
               <Facebook size={18} />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
-              aria-label="Instagram"
-            >
+            </span>
+            <span className="text-primary-foreground/60 cursor-default" aria-label="Instagram">
               <Instagram size={18} />
-            </a>
+            </span>
           </div>
           <div className="flex items-center gap-5 text-[10px] tracking-[0.15em] uppercase text-primary-foreground/40">
             <a href="/mentions-legales" className="hover:text-primary-foreground transition-colors">Mentions légales</a>
