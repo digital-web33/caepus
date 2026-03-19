@@ -10,7 +10,7 @@ const Traiteur = () => {
           src={heroImg}
           alt="Traiteur événementiel Caepus"
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: "center 65%" }}
+          style={{ objectPosition: "center 88%" }}
         />
         {/* Dégradé sombre en bas pour lisibilité du texte, puis fondu crème */}
         <div
