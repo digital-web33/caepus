@@ -21,11 +21,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       {/* NAV */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary shadow-md">
-        <div className="w-full px-10 py-4 flex items-center justify-between">
+        <div className="w-full px-10 py-5 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex-shrink-0 flex flex-col items-start leading-none">
-            <span className="font-display text-primary-foreground text-2xl tracking-[0.22em] uppercase font-normal">Caepus</span>
-            <span className="text-primary-foreground/70 text-[8px] tracking-[0.28em] uppercase mt-0.5 font-light">Traiteur — Restaurant</span>
+          <Link to="/" className="flex-shrink-0 flex flex-col items-start leading-none gap-1">
+            <span className="font-display text-primary-foreground text-4xl tracking-[0.28em] uppercase font-extralight">Caepus</span>
+            <span className="text-primary-foreground/60 text-[9px] tracking-[0.38em] uppercase font-extralight">Traiteur — Restaurant</span>
           </Link>
 
           {/* Desktop Nav */}
