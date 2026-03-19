@@ -7,7 +7,7 @@ const Traiteur = () => {
           <h1 className="font-display text-5xl md:text-7xl font-bold text-primary uppercase mb-4 leading-tight">
             Traiteur événementiel à Paris
           </h1>
-          <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground">
+          <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground font-bold">
             Une offre sur-mesure pour vos événements professionnels et privés
           </p>
         </div>
