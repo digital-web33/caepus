@@ -8,7 +8,6 @@ const NAV_LINKS = [
   { label: "Traiteur", href: "/traiteur" },
   { label: "Plateaux Repas et lunchbox", href: "/restaurant" },
   { label: "Galerie", href: "/galerie" },
-  { label: "Actualités", href: "/actualites" },
   { label: "Contact", href: "/contact" },
 ];
 
