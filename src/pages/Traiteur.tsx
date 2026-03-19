@@ -4,8 +4,8 @@ const Traiteur = () => {
       {/* Hero */}
       <section className="bg-primary/5 border-b border-primary/10">
         <div className="max-w-5xl mx-auto px-8 py-24">
-          <h1 className="font-display text-5xl md:text-7xl font-bold text-primary uppercase mb-4 leading-tight">
-            Traiteur événementiel à Paris
+          <h1 className="font-display text-4xl md:text-5xl font-extralight text-primary tracking-[0.18em] uppercase mb-4 leading-snug">
+            Traiteur <span className="font-semibold">événementiel</span> à Paris
           </h1>
           <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground font-bold">
             Une offre sur-mesure pour vos événements professionnels et privés
