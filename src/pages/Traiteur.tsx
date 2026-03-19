@@ -23,7 +23,7 @@ const Traiteur = () => {
         {/* Texte centré verticalement dans la zone sombre */}
         <div className="absolute inset-0 flex flex-col justify-end px-10 pb-16">
           <h1 className="font-display text-4xl md:text-6xl font-extralight text-white tracking-[0.18em] uppercase mb-3 leading-tight drop-shadow-lg">
-            Traiteur <span className="font-semibold">événementiel</span> à Paris
+            Traiteur <span className="font-semibold text-[hsl(var(--nav-active))]">événementiel</span> à Paris
           </h1>
           <p className="text-xs tracking-[0.32em] uppercase text-white/70 font-semibold">
             Une offre sur-mesure pour vos événements professionnels et privés
