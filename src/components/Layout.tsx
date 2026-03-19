@@ -79,12 +79,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               );
             })}
             <div className="flex items-center gap-4 px-6 py-3 border-t border-primary-foreground/10">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground">
+              <span className="text-primary-foreground/70 cursor-default">
                 <Facebook size={16} />
-              </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground">
+              </span>
+              <span className="text-primary-foreground/70 cursor-default">
                 <Instagram size={16} />
-              </a>
+              </span>
             </div>
           </div>
         )}
