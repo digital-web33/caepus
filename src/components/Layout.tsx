@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
 import personnageImg from "@/assets/personnage-pattern.jpg";
-import personnageSmallImg from "@/assets/personnage-pattern-small.jpg";
 
 const NAV_LINKS = [
   { label: "Une maison de famille", href: "/" },
@@ -96,9 +95,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <div
         className="fixed inset-0 z-0 pointer-events-none"
         style={{
-          backgroundImage: `url(${personnageSmallImg})`,
-          backgroundSize: "500px 500px",
-          backgroundRepeat: "repeat",
+          backgroundImage: `url(${personnageImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+          backgroundRepeat: "no-repeat",
         }}
       />
 
