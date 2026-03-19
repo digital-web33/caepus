@@ -4,7 +4,7 @@ const Traiteur = () => {
   return (
     <div className="min-h-screen">
       {/* Hero image */}
-      <section className="relative overflow-hidden h-[320px] sm:h-[420px] md:h-[500px]">
+      <section className="relative overflow-hidden h-[280px] sm:h-[380px] md:h-[500px]">
         <img
           src={heroImg}
           alt="Traiteur événementiel Caepus"
@@ -18,7 +18,7 @@ const Traiteur = () => {
               "linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.6) 65%, hsl(42,47%,95%) 100%)",
           }}
         />
-        <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-10 pb-10 md:pb-16">
+        <div className="absolute bottom-0 left-0 right-0 flex flex-col justify-end px-6 md:px-10 pb-8 md:pb-16">
           <h1 className="font-display text-2xl sm:text-4xl md:text-6xl font-extralight text-white tracking-[0.12em] md:tracking-[0.18em] uppercase mb-2 md:mb-3 leading-tight drop-shadow-lg">
             Traiteur <span className="font-semibold text-[hsl(var(--nav-active))]">événementiel</span> à Paris
           </h1>
