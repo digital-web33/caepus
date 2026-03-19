@@ -8,7 +8,7 @@
   :root {
     /* Caepus green palette */
     --background: 42 47% 95%;        /* crème chaude */
-    --foreground: 150 40% 12%;       /* vert très foncé */
+    --foreground: 0 0% 8%;           /* noir */
 
     --card: 42 47% 97%;
     --card-foreground: 150 40% 12%;
