@@ -8,7 +8,7 @@ const Restaurant = () => {
       {/* Hero */}
       <section className="bg-primary text-primary-foreground">
         <div className="max-w-5xl mx-auto px-8 py-24">
-          <h1 className="font-display text-5xl md:text-7xl font-bold uppercase mb-4 leading-tight">
+          <h1 className="font-display text-3xl sm:text-5xl md:text-7xl font-bold uppercase mb-4 leading-tight">
             Plateaux repas<br />
             <span className="italic font-normal text-primary-foreground/80">& lunchbox</span>
           </h1>
