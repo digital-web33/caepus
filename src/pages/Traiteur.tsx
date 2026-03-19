@@ -4,27 +4,28 @@ const Traiteur = () => {
   return (
     <div className="min-h-screen">
       {/* Hero image */}
-      <section className="relative overflow-hidden border-b border-primary/20" style={{ height: "480px" }}>
-        {/* Photo */}
+      <section className="relative overflow-hidden" style={{ height: "500px" }}>
+        {/* Photo recadrée sur les finger food en bas */}
         <img
           src={heroImg}
           alt="Traiteur événementiel Caepus"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ objectPosition: "center 65%" }}
         />
-        {/* Dégradé bas vers crème pour une transition douce */}
+        {/* Dégradé sombre en bas pour lisibilité du texte, puis fondu crème */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.08) 45%, hsl(42,47%,95%) 100%)",
+              "linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.55) 60%, hsl(42,47%,95%) 100%)",
           }}
         />
-        {/* Contenu texte superposé */}
-        <div className="absolute bottom-0 left-0 right-0 px-10 pb-10">
-          <h1 className="font-display text-4xl md:text-5xl font-extralight text-white tracking-[0.18em] uppercase mb-3 leading-snug drop-shadow-md">
+        {/* Texte centré verticalement dans la zone sombre */}
+        <div className="absolute inset-0 flex flex-col justify-end px-10 pb-16">
+          <h1 className="font-display text-4xl md:text-6xl font-extralight text-white tracking-[0.18em] uppercase mb-3 leading-tight drop-shadow-lg">
             Traiteur <span className="font-semibold">événementiel</span> à Paris
           </h1>
-          <p className="text-xs tracking-[0.32em] uppercase text-white/80 font-semibold drop-shadow">
+          <p className="text-xs tracking-[0.32em] uppercase text-white/70 font-semibold">
             Une offre sur-mesure pour vos événements professionnels et privés
           </p>
         </div>
