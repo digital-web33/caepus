@@ -21,26 +21,26 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       {/* NAV */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary shadow-md">
-        <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
+        <div className="w-full px-10 py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex-shrink-0 flex flex-col items-center leading-none">
-            <span className="font-display text-primary-foreground text-2xl tracking-[0.18em] uppercase">Caepus</span>
-            <span className="text-primary-foreground/80 text-[8px] tracking-[0.3em] uppercase mt-0.5">Traiteur &amp; Restaurant</span>
+          <Link to="/" className="flex-shrink-0 flex flex-col items-start leading-none">
+            <span className="font-display text-primary-foreground text-2xl tracking-[0.22em] uppercase font-normal">Caepus</span>
+            <span className="text-primary-foreground/70 text-[8px] tracking-[0.28em] uppercase mt-0.5 font-light">Traiteur — Restaurant</span>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-10">
             {NAV_LINKS.map((l) => {
               const isActive = location.pathname === l.href;
               return (
                 <Link
                   key={l.label}
                   to={l.href}
-                  className={`relative text-[13px] tracking-[0.12em] font-semibold transition-colors duration-200
-                    after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:transition-[width] after:duration-300 after:ease-out
+                  className={`relative text-[13px] tracking-[0.06em] font-light transition-colors duration-200
+                    after:absolute after:bottom-[-4px] after:left-0 after:h-[1.5px] after:transition-[width] after:duration-300 after:ease-out
                     ${isActive
                       ? "text-[hsl(var(--nav-active))] after:w-full after:bg-[hsl(var(--nav-active))]"
-                      : "text-primary-foreground after:w-0 hover:text-primary-foreground/80 hover:after:w-full after:bg-primary-foreground/80"
+                      : "text-primary-foreground after:w-0 hover:text-primary-foreground/80 hover:after:w-full after:bg-primary-foreground/60"
                     }`}
                 >
                   {l.label}
