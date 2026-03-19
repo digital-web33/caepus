@@ -8,8 +8,7 @@ const Traiteur = () => {
         <img
           src={heroImg}
           alt="Traiteur événementiel Caepus"
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: "50% 100%" }}
+          className="absolute inset-0 w-full h-full object-cover scale-[1.6] origin-bottom"
         />
         <div
           className="absolute inset-0"
