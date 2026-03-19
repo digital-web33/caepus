@@ -9,7 +9,7 @@ const Traiteur = () => {
           src={heroImg}
           alt="Traiteur événementiel Caepus"
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: "center 88%" }}
+          style={{ objectPosition: "center bottom" }}
         />
         <div
           className="absolute inset-0"
