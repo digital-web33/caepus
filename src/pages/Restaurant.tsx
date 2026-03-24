@@ -1,8 +1,33 @@
 import { useLocation } from "react-router-dom";
+import { useEffect, useRef } from "react";
+
+function useAutoplayOnVisible() {
+  const ref = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    const video = ref.current;
+    if (!video) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play();
+        } else {
+          video.pause();
+          video.currentTime = 0;
+        }
+      },
+      { threshold: 0.4 }
+    );
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+  return ref;
+}
 
 const Restaurant = () => {
   const location = useLocation();
   const videoKey = location.key;
+  const refPlateaux = useAutoplayOnVisible();
+  const refLunchbox = useAutoplayOnVisible();
 
   return (
     <div className="min-h-screen">
