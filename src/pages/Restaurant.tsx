@@ -24,8 +24,6 @@ function useAutoplayOnVisible() {
 }
 
 const Restaurant = () => {
-  const location = useLocation();
-  const videoKey = location.key;
   const refPlateaux = useAutoplayOnVisible();
   const refLunchbox = useAutoplayOnVisible();
 
