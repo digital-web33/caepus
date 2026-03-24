@@ -1,4 +1,9 @@
+import { useLocation } from "react-router-dom";
+
 const Restaurant = () => {
+  const location = useLocation();
+  const videoKey = location.key;
+
   return (
     <div className="min-h-screen">
 
