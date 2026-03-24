@@ -1,4 +1,9 @@
+import { useLocation } from "react-router-dom";
+
 const Restaurant = () => {
+  const location = useLocation();
+  const videoKey = location.key;
+
   return (
     <div className="min-h-screen">
 
@@ -23,10 +28,10 @@ const Restaurant = () => {
             {/* Vidéo */}
             <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10 aspect-[4/3]">
               <video
+                key={videoKey + "-plateaux"}
                 src="/uploads/hero-restaurant.mp4"
                 autoPlay
                 muted
-                loop
                 playsInline
                 className="w-full h-full object-cover"
               />
@@ -95,10 +100,10 @@ const Restaurant = () => {
             {/* Vidéo */}
             <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10 aspect-[4/3]">
               <video
+                key={videoKey + "-lunchbox"}
                 src="/uploads/hero-restaurant.mp4"
                 autoPlay
                 muted
-                loop
                 playsInline
                 className="w-full h-full object-cover"
               />
