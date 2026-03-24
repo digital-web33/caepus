@@ -101,7 +101,7 @@ const Restaurant = () => {
             <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10 aspect-[4/3]">
               <video
                 key={videoKey + "-lunchbox"}
-                src="/uploads/hero-restaurant.mp4"
+                src="/uploads/hero-lunchbox.mp4"
                 autoPlay
                 muted
                 playsInline
