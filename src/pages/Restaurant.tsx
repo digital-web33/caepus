@@ -28,10 +28,10 @@ const Restaurant = () => {
             {/* Vidéo */}
             <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10 aspect-[4/3]">
               <video
+                key={videoKey + "-plateaux"}
                 src="/uploads/hero-restaurant.mp4"
                 autoPlay
                 muted
-                loop
                 playsInline
                 className="w-full h-full object-cover"
               />
