@@ -60,27 +60,27 @@ const Traiteur = () => {
         </div>
       </section>
 
-      {/* Section 2 — Cocktails & Réceptions + photo */}
+      {/* Section 2 — Lunchbox & Plateaux repas + photo */}
       <section className="bg-primary/5 border-b border-primary/10">
         <div className="max-w-5xl mx-auto px-8 py-20">
           <div className="grid md:grid-cols-2 gap-16 items-center">
 
             {/* Texte */}
             <div className="space-y-5">
-              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Cocktails & Réceptions</p>
+              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Lunchbox & Plateaux repas</p>
               <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
-                Mariages,<br /><span className="italic font-normal text-primary">fêtes & cocktails</span>
+                Plateaux repas,<br /><span className="italic font-normal text-primary">lunchbox & livraison</span>
               </h2>
               <div className="w-8 h-0.5 bg-primary/30" />
               <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
                 <p>
-                  Des buffets raffinés pour vos événements professionnels et privés. Plateaux de tartes, salades composées, desserts maison.
+                  Nos plateaux repas sont confectionnés le matin même, dans notre laboratoire de la rue Duphot. Produits frais, majoritairement de saison.
                 </p>
                 <p>
-                  Pour vos réunions d'entreprise, des formules équilibrées et gourmandes livrées directement sur votre lieu de travail.
+                  Nos lunchbox sont gourmandes et généreuses — idéales pour un event de dernière minute, un shooting ou un déjeuner groupé entre collaborateurs.
                 </p>
                 <p>
-                  Faites de chaque moment une célébration avec nos menus personnalisés, créés sur mesure selon vos envies.
+                  Du mardi au vendredi, livraison à domicile dans Paris et proche banlieue. Tous nos plateaux peuvent être adaptés <span className="uppercase tracking-wide">sans gluten</span>.
                 </p>
               </div>
             </div>
@@ -88,8 +88,8 @@ const Traiteur = () => {
             {/* Photo */}
             <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10 aspect-[4/3]">
               <img
-                src={traiteurCocktail}
-                alt="Cocktail et réception traiteur Caepus"
+                src={traiteurLunchbox}
+                alt="Plateaux repas et lunchbox Caepus"
                 loading="lazy"
                 width={900}
                 height={700}
