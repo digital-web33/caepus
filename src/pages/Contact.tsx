@@ -28,11 +28,12 @@ const Contact = () => {
       {/* Hero */}
       <section className="bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-8 py-24">
-          <h1 className="font-display text-5xl md:text-7xl font-bold uppercase mb-4">
-            Contact
+          <h1 className="font-display text-3xl sm:text-5xl md:text-7xl font-bold uppercase mb-4 leading-tight">
+            <span className="text-primary-foreground text-5xl">Contact</span><br />
+            <span className="italic font-normal text-primary-foreground/80 text-5xl">Notre équipe est à votre écoute</span>
           </h1>
           <p className="text-sm tracking-[0.3em] uppercase text-primary-foreground/60">
-            NOUS SOMMES À VOTRE ÉCOUTE
+            Nous sommes disponibles du lundi au vendredi de 9h à 18h
           </p>
         </div>
       </section>
