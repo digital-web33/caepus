@@ -15,7 +15,7 @@ const Restaurant = () => {
             <span className="italic font-normal text-primary-foreground/80">& lunchbox</span>
           </h1>
           <p className="text-sm tracking-[0.3em] uppercase text-primary-foreground/60">
-            Livrés rue Duphot et partout à Paris
+            Livrés partout en Île-de-France
           </p>
         </div>
       </section>
