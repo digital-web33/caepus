@@ -129,7 +129,7 @@ const Traiteur = () => {
                 {[
                   "Maîtres d'hôtel expérimentés, disponibles tout au long de votre événement",
                   "Location de matériel, vaisselle, verrerie, nappage, présentoirs, mobilier, décoration",
-                  "Décoration florale pour vos buffets",
+                  "Décoration florale et mise en scène",
                   "Conseil personnalisé en amont de votre événement",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground/70">
