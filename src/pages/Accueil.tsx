@@ -41,16 +41,8 @@ const Accueil = () => {
         </div>
       </section>
 
-      {/* SÉPARATEUR DÉCORATIF */}
-      <div className="bg-primary py-5">
-        <div className="max-w-5xl mx-auto px-8 flex items-center justify-center gap-8">
-          {["Le bon", "Le frais", "Le fait maison"].map((val) => (
-            <span key={val} className="text-xs tracking-[0.35em] uppercase text-primary-foreground/80 font-medium">
-              {val}
-            </span>
-          ))}
-        </div>
-      </div>
+      {/* SÉPARATEUR */}
+      <div className="bg-secondary h-6" />
 
       {/* NOTRE HISTOIRE */}
       <section className="bg-background">
