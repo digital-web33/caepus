@@ -110,14 +110,14 @@ const Accueil = () => {
       {/* LE RESTAURANT – CTA */}
       <section className="bg-background border-y border-primary/10">
         <div className="max-w-5xl mx-auto px-8 py-20 text-center">
-          <p className="text-xs tracking-[0.4em] uppercase text-primary/50 mb-4">Sur place ou à emporter</p>
+          <p className="text-xs tracking-[0.4em] uppercase text-primary/50 mb-4">Sur place et à emporter</p>
           <h2 className="font-display text-5xl font-bold text-primary uppercase mb-6">
             Le Restaurant
           </h2>
           <div className="w-8 h-0.5 bg-primary/30 mx-auto mb-8" />
           <div className="grid md:grid-cols-3 gap-8 mt-10">
             {[
-              { title: "Chaque jour", text: "Sur place ou à emporter · Paris 1er — Chaque jour, une nouvelle sélection : plats chauds mijotés, salades, tartes salées et sucrées, desserts maison." },
+              { title: "Chaque jour", text: "Sur place et à emporter · Paris 1er — Chaque jour, une nouvelle sélection : plats chauds mijotés, salades, tartes salées et sucrées, desserts maison." },
               { title: "Fait maison", text: "Cuisine fraîche et de saison, préparée chaque matin à partir des produits du jour." },
               { title: "Les classiques", text: "Bien sûr, les incontournables sont toujours là ! Saumon teriyaki, bowls généreux, bo-bun, soupes chaudes ou froides, sandwichs chauds, banh-mi toasté, smoothies et jus de fruits frais pressés." },
             ].map((item) => (
