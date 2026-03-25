@@ -55,7 +55,7 @@ const Accueil = () => {
             <div className="space-y-5">
               <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Notre histoire</p>
               <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
-                Un Héritage<br /><span className="italic font-normal">familial</span>
+                Un Héritage<br /><span className="italic font-normal text-primary">familial</span>
               </h2>
               <div className="w-8 h-0.5 bg-primary/30" />
               <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
