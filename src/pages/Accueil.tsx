@@ -11,7 +11,7 @@ const Accueil = () => {
         <div className="max-w-5xl mx-auto px-8 py-24 grid md:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-xs tracking-[0.4em] text-primary/60 uppercase font-medium mb-6">
-              Fondé en 1989
+              Fondée en 1989
             </p>
             <h1 className="font-display text-6xl md:text-7xl font-bold text-primary leading-[1] mb-6 uppercase">
               Une<br />
