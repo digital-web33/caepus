@@ -1,5 +1,5 @@
 import traiteurSpread from "@/assets/traiteur-spread.jpg";
-import traiteurCocktail from "@/assets/traiteur-cocktail.jpg";
+import traiteurLunchbox from "@/assets/traiteur-lunchbox.jpg";
 import traiteurService from "@/assets/traiteur-service.jpg";
 
 const Traiteur = () => {
