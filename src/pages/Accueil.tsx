@@ -15,7 +15,7 @@ const Accueil = () => {
             </p>
             <h1 className="font-display text-6xl md:text-7xl font-bold text-primary leading-[1] mb-6 uppercase">
               Une<br />
-              <span className="italic font-normal">maison de</span><br />
+              <span className="italic font-normal text-primary">maison de</span><br />
               famille
             </h1>
             <div className="w-12 h-0.5 bg-primary/40 my-6" />
