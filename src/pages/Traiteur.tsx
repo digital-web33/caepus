@@ -138,7 +138,7 @@ const Traiteur = () => {
                   </li>
                 ))}
               </ul>
-              <p className="text-sm leading-relaxed text-foreground/70 italic border-l-2 border-primary/30 pl-4 mt-4">
+              <p className="leading-relaxed italic border-l-2 border-primary/30 pl-4 mt-4 text-primary shadow-sm text-lg font-bold">
                 Découvrez notre carte traiteur : buffets et cocktails clés en main, pour simplifier l'organisation de votre prochain événement.
               </p>
             </div>
