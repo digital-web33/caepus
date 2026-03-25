@@ -75,7 +75,7 @@ const Contact = () => {
               <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">Horaires</p>
               <p className="text-sm">
                 Restaurant : lundi – vendredi : 9 h – 18 h<br />
-                Service commerciale : 9 h à 18 h
+                Service commercial: 9 h - 18 h
               </p>
             </div>
           </div>
