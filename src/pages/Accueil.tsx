@@ -115,10 +115,9 @@ const Accueil = () => {
             Le Restaurant
           </h2>
           <div className="w-8 h-0.5 bg-primary/30 mx-auto mb-8" />
-          <div className="grid md:grid-cols-3 gap-8 mt-10">
+          <div className="grid md:grid-cols-2 gap-8 mt-10 max-w-2xl mx-auto">
             {[
               { title: "Chaque jour", text: "Sur place et à emporter · Paris 1er — Chaque jour, une nouvelle sélection : plats chauds mijotés, salades, tartes salées et sucrées, desserts maison." },
-              { title: "Fait maison", text: "Cuisine fraîche et de saison, préparée chaque matin à partir des produits du jour." },
               { title: "Les classiques", text: "Bien sûr, les incontournables sont toujours là ! Saumon teriyaki, bowls généreux, bo-bun, soupes chaudes ou froides, sandwichs chauds, banh-mi toasté, smoothies et jus de fruits frais pressés." },
             ].map((item) => (
               <div key={item.title} className="border border-primary/20 p-7 text-left hover:bg-primary/5 transition-colors rounded-sm">
