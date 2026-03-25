@@ -117,7 +117,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <span className="text-primary-foreground/80 text-[8px] tracking-[0.3em] uppercase">Traiteur &amp; Restaurant</span>
           </div>
           <p className="text-xs tracking-[0.25em] uppercase text-primary-foreground/60">
-            Traiteur · Restaurant · Neuilly-sur-Seine
+            Traiteur · Restaurant · Paris · Neuilly-sur-Seine
           </p>
           <div className="flex items-center gap-5">
             <span className="text-primary-foreground/60 cursor-default" aria-label="Facebook">
