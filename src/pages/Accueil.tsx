@@ -41,11 +41,8 @@ const Accueil = () => {
         </div>
       </section>
 
-      {/* SÉPARATEUR */}
-      <div className="bg-secondary h-6" />
-
       {/* NOTRE HISTOIRE */}
-      <section className="bg-background">
+      <section className="bg-muted border-y border-border">
         <div className="max-w-5xl mx-auto px-8 py-24">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
