@@ -39,7 +39,7 @@ const Restaurant = () => {
 
             {/* Texte */}
             <div className="space-y-5">
-              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Plateaux repas</p>
+              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">​</p>
               <h2 className="font-display text-4xl font-bold text-primary leading-tight">
                 Plateaux repas
               </h2>
