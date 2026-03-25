@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
-import personnageImg from "@/assets/personnage-pattern.jpg";
+import personnageImg from "@/assets/personnage-pattern.png";
 
 const NAV_LINKS = [
   { label: "Une maison de famille", href: "/" },
