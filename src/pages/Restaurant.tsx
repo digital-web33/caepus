@@ -11,8 +11,8 @@ const Restaurant = () => {
       <section className="bg-primary text-primary-foreground">
         <div className="max-w-5xl mx-auto px-8 py-24">
           <h1 className="font-display text-3xl sm:text-5xl md:text-7xl font-bold uppercase mb-4 leading-tight">
-            <span className="text-primary-foreground">Plateaux repas</span><br />
-            <span className="italic font-normal text-primary-foreground/80">& lunchbox</span>
+            <span className="text-primary-foreground text-4xl">Plateaux repas</span><br />
+            <span className="italic font-normal text-primary-foreground/80 text-4xl">& lunchbox</span>
           </h1>
           <p className="text-sm tracking-[0.3em] uppercase text-primary-foreground/60">
             Livrés partout en Île-de-France
