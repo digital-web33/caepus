@@ -1,104 +1,149 @@
-import heroImg from "@/assets/traiteur-hero.jpg";
+import traiteurSpread from "@/assets/traiteur-spread.jpg";
+import traiteurCocktail from "@/assets/traiteur-cocktail.jpg";
+import traiteurService from "@/assets/traiteur-service.jpg";
 
 const Traiteur = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero image */}
-      <section className="relative overflow-hidden h-[280px] sm:h-[380px] md:h-[500px]">
-        <img
-          src={heroImg}
-          alt="Traiteur événementiel Caepus"
-          className="absolute inset-0 w-full h-full object-cover scale-[1.6] origin-bottom"
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.6) 65%, hsl(42,47%,95%) 100%)",
-          }}
-        />
-        <div className="absolute bottom-0 left-0 right-0 flex flex-col justify-end px-6 md:px-10 pb-8 md:pb-16">
-          <h1 className="font-display text-2xl sm:text-4xl md:text-6xl font-extralight text-white tracking-[0.12em] md:tracking-[0.18em] uppercase mb-2 md:mb-3 leading-tight drop-shadow-lg">
-            Traiteur <span className="font-semibold text-[hsl(var(--nav-active))]">événementiel</span>
+
+      {/* Hero – fond vert uni, titre blanc */}
+      <section className="bg-primary text-primary-foreground">
+        <div className="max-w-5xl mx-auto px-8 py-24">
+          <h1 className="font-display text-3xl sm:text-5xl md:text-7xl font-bold uppercase mb-4 leading-tight">
+            <span className="text-primary-foreground">Traiteur</span><br />
+            <span className="italic font-normal text-primary-foreground/80">événementiel</span>
           </h1>
-          <p className="text-[10px] md:text-xs tracking-[0.25em] md:tracking-[0.32em] uppercase text-white/70 font-semibold leading-relaxed">
+          <p className="text-sm tracking-[0.3em] uppercase text-primary-foreground/60">
             Une offre sur-mesure pour vos événements professionnels et privés
           </p>
         </div>
       </section>
 
-      {/* Intro */}
+      {/* Section 1 — Intro + photo */}
       <section className="bg-background border-b border-primary/10">
-        <div className="max-w-5xl mx-auto px-8 py-16 space-y-6">
-          <p className="text-base leading-relaxed text-foreground/75">
-            Depuis plus de 20 ans, nos équipes accompagnent particuliers et entreprises dans l'organisation de leurs événements, pour 10 à 300 convives.
-          </p>
-          <p className="text-base leading-relaxed text-foreground/75">
-            Nous intervenons à tous les moments de la journée : petit-déjeuner, pause matinale, goûter, apéritif, déjeuner, dîner. Pour chaque occasion, des plats familiaux chauds ou froids préparés avec soin.
-          </p>
-          <div className="border-l-2 border-primary/30 pl-6">
-            <p className="text-sm leading-relaxed text-foreground/70 italic">
-              Une offre entièrement personnalisée : plateaux-repas, lunchbox, cocktail dinatoire et finger-food, buffet à partager, plats et desserts individuels. Le tout adapté à vos envies, votre image de marque, le thème de votre événement et votre budget.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Prestations */}
-      <section className="bg-primary/5">
         <div className="max-w-5xl mx-auto px-8 py-20">
-          <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">Nos prestations</p>
-          <h2 className="font-display text-4xl font-bold text-primary uppercase mb-12">Ce que nous proposons</h2>
-          <div className="grid md:grid-cols-2 gap-10">
-            {[
-              {
-                title: "Cocktails & Réceptions",
-                text: "Des buffets raffinés pour vos événements professionnels et privés. Plateaux de tartes, salades composées, desserts maison.",
-              },
-              {
-                title: "Plateaux repas",
-                text: "Pour vos réunions d'entreprise, des formules équilibrées et gourmandes livrées directement sur votre lieu de travail.",
-              },
-              {
-                title: "Mariages & Fêtes",
-                text: "Faites de chaque moment une célébration avec nos menus personnalisés, créés sur mesure selon vos envies.",
-              },
-              {
-                title: "Sur mesure",
-                text: "Contactez-nous pour discuter de vos besoins spécifiques. Chaque commande est unique, comme vous.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="border-l-2 border-primary/30 pl-6">
-                <h3 className="font-display text-2xl font-bold text-primary mb-2">{item.title}</h3>
-                <div className="w-6 h-0.5 bg-primary/30 mb-3" />
-                <p className="text-foreground/75 leading-relaxed text-sm">{item.text}</p>
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+
+            {/* Photo */}
+            <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10 aspect-[4/3]">
+              <img
+                src={traiteurSpread}
+                alt="Buffet traiteur Caepus"
+                loading="lazy"
+                width={900}
+                height={700}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Texte */}
+            <div className="space-y-5">
+              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Notre expertise</p>
+              <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
+                Une cuisine<br /><span className="italic font-normal text-primary">sur mesure</span>
+              </h2>
+              <div className="w-8 h-0.5 bg-primary/30" />
+              <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
+                <p>
+                  Depuis plus de 20 ans, nos équipes accompagnent particuliers et entreprises dans l'organisation de leurs événements, pour 10 à 300 convives.
+                </p>
+                <p>
+                  Nous intervenons à tous les moments de la journée : petit-déjeuner, pause matinale, goûter, apéritif, déjeuner, dîner. Pour chaque occasion, des plats familiaux chauds ou froids préparés avec soin.
+                </p>
+                <p className="text-primary/80 font-medium">
+                  Plateaux-repas, lunchbox, cocktail dinatoire, finger-food, buffet à partager — le tout adapté à votre image de marque et votre budget.
+                </p>
               </div>
-            ))}
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* Nos services */}
-      <section className="bg-background border-t border-primary/10">
+      {/* Section 2 — Cocktails & Réceptions + photo */}
+      <section className="bg-primary/5 border-b border-primary/10">
         <div className="max-w-5xl mx-auto px-8 py-20">
-          <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">Services inclus</p>
-          <h2 className="font-display text-4xl font-bold text-primary uppercase mb-10">Nos services</h2>
-          <ul className="space-y-4 mb-10">
-            {[
-              "Maîtres d'hôtel expérimentés, disponibles tout au long de votre événement",
-              "Location de matériel (vaisselle, verrerie, buffet, nappage, présentoirs)",
-              "Décoration florale pour vos buffets",
-              "Conseil personnalisé en amont de votre événement",
-            ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground/75">
-                <span className="text-primary mt-0.5">•</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="text-sm leading-relaxed text-foreground/70 italic border-l-2 border-primary/30 pl-6">
-            Découvrez notre carte traiteur : buffets et cocktails clés en main, pour simplifier l'organisation de votre prochain événement.
-          </p>
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+
+            {/* Texte */}
+            <div className="space-y-5">
+              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Cocktails & Réceptions</p>
+              <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
+                Mariages,<br /><span className="italic font-normal text-primary">fêtes & cocktails</span>
+              </h2>
+              <div className="w-8 h-0.5 bg-primary/30" />
+              <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
+                <p>
+                  Des buffets raffinés pour vos événements professionnels et privés. Plateaux de tartes, salades composées, desserts maison.
+                </p>
+                <p>
+                  Pour vos réunions d'entreprise, des formules équilibrées et gourmandes livrées directement sur votre lieu de travail.
+                </p>
+                <p>
+                  Faites de chaque moment une célébration avec nos menus personnalisés, créés sur mesure selon vos envies.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo */}
+            <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10 aspect-[4/3]">
+              <img
+                src={traiteurCocktail}
+                alt="Cocktail et réception traiteur Caepus"
+                loading="lazy"
+                width={900}
+                height={700}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3 — Nos services + photo */}
+      <section className="bg-background border-b border-primary/10">
+        <div className="max-w-5xl mx-auto px-8 py-20">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+
+            {/* Photo */}
+            <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10 aspect-[4/3]">
+              <img
+                src={traiteurService}
+                alt="Service traiteur événementiel Caepus"
+                loading="lazy"
+                width={900}
+                height={700}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Texte */}
+            <div className="space-y-5">
+              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Services inclus</p>
+              <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
+                Nos<br /><span className="italic font-normal text-primary">services</span>
+              </h2>
+              <div className="w-8 h-0.5 bg-primary/30" />
+              <ul className="space-y-3">
+                {[
+                  "Maîtres d'hôtel expérimentés, disponibles tout au long de votre événement",
+                  "Location de matériel (vaisselle, verrerie, buffet, nappage, présentoirs)",
+                  "Décoration florale pour vos buffets",
+                  "Conseil personnalisé en amont de votre événement",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground/70">
+                    <span className="text-primary mt-0.5">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-sm leading-relaxed text-foreground/70 italic border-l-2 border-primary/30 pl-4 mt-4">
+                Découvrez notre carte traiteur : buffets et cocktails clés en main, pour simplifier l'organisation de votre prochain événement.
+              </p>
+            </div>
+
+          </div>
         </div>
       </section>
 
