@@ -116,7 +116,7 @@ const Restaurant = () => {
       {/* Livraison */}
       <section className="bg-background border-t border-primary/10">
         <div className="max-w-5xl mx-auto px-8 py-16">
-          <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">Livraison à domicile</p>
+          <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">​</p>
           <h2 className="font-display text-4xl font-bold text-primary uppercase mb-6 leading-tight">
             À Paris — Votre déjeuner<br /><span className="italic font-normal">livré à domicile</span>
           </h2>
