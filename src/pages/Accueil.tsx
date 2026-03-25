@@ -23,8 +23,6 @@ const Accueil = () => {
               Cuisine familiale, préparée chaque jour dans notre laboratoire parisien à la Madeleine, et livrée partout en Île-de-France.
             </p>
             <div className="mt-10 flex flex-col gap-1">
-              <p className="text-xs tracking-[0.3em] text-primary/50 uppercase font-medium">​</p>
-              <p className="text-xs tracking-[0.3em] text-primary/50 uppercase font-medium">​</p>
             </div>
           </div>
           <div className="relative">
@@ -81,7 +79,7 @@ const Accueil = () => {
             <div className="space-y-5">
               <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">L'équipe</p>
               <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
-                ​<br /><span className="italic font-normal text-primary">équipe, une famille</span>
+                <span className="italic font-normal text-primary">équipe, une famille</span>
               </h2>
               <div className="w-8 h-0.5 bg-primary/30" />
               <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
