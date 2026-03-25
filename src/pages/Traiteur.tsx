@@ -153,7 +153,7 @@ const Traiteur = () => {
           <h2 className="font-display text-4xl font-bold text-primary mb-4">
             Notre carte traiteur
           </h2>
-          <p className="text-sm leading-relaxed text-foreground/70 max-w-xl mx-auto mb-8">
+          <p className="text-sm leading-relaxed text-foreground/70 max-w-2xl mx-auto mb-8">
             Vous y trouverez quelques idées de buffets, cocktails clé en main, tout pour vous faciliter la vie.
           </p>
           <a
