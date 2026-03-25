@@ -19,7 +19,7 @@ const Traiteur = () => {
         />
         <div className="absolute bottom-0 left-0 right-0 flex flex-col justify-end px-6 md:px-10 pb-8 md:pb-16">
           <h1 className="font-display text-2xl sm:text-4xl md:text-6xl font-extralight text-white tracking-[0.12em] md:tracking-[0.18em] uppercase mb-2 md:mb-3 leading-tight drop-shadow-lg">
-            Traiteur <span className="font-semibold text-[hsl(var(--nav-active))]">événementiel</span> à Paris
+            Traiteur <span className="font-semibold text-[hsl(var(--nav-active))]">événementiel</span>
           </h1>
           <p className="text-[10px] md:text-xs tracking-[0.25em] md:tracking-[0.32em] uppercase text-white/70 font-semibold leading-relaxed">
             Une offre sur-mesure pour vos événements professionnels et privés
