@@ -110,7 +110,7 @@ const Accueil = () => {
       {/* LE RESTAURANT – CTA */}
       <section className="bg-background border-y border-primary/10">
         <div className="max-w-5xl mx-auto px-8 py-20 text-center">
-          <p className="text-xs tracking-[0.4em] uppercase text-primary/50 mb-4">Sur place ou à emporter</p>
+          <p className="text-xs tracking-[0.4em] uppercase text-primary/50 mb-4">Sur place et à emporter</p>
           <h2 className="font-display text-5xl font-bold text-primary uppercase mb-6">
             Le Restaurant
           </h2>
