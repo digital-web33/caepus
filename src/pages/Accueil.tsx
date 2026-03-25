@@ -128,7 +128,7 @@ const Accueil = () => {
               </div>
             ))}
           </div>
-          <p className="text-xs tracking-[0.3em] uppercase text-primary/50 mt-8">Ouvert du lundi au samedi, à partir de 11h</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-primary/50 mt-8">Ouvert du lundi au vendredi, à partir de 11h</p>
         </div>
       </section>
 
