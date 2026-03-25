@@ -120,7 +120,7 @@ const Traiteur = () => {
 
             {/* Texte */}
             <div className="space-y-5">
-              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Services inclus</p>
+              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Services proposés</p>
               <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
                 Nos<br /><span className="italic font-normal text-primary">services</span>
               </h2>
