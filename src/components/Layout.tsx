@@ -95,7 +95,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         className="fixed inset-0 z-0 pointer-events-none"
         style={{
           backgroundImage: `url(${personnageImg})`,
-          backgroundSize: "40%",
+          backgroundSize: "cover",
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
         }}
