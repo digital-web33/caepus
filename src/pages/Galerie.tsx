@@ -179,18 +179,16 @@ const Galerie = () => {
       {/* Meta description rendered as comment for SEO reference */}
       <div className="min-h-screen">
         {/* ── Hero ── */}
-        <section className="bg-primary/5 border-b border-primary/10">
+        <section className="bg-primary text-primary-foreground">
           <div className="max-w-5xl mx-auto px-8 py-24">
-            <h1 className="font-display text-5xl md:text-7xl font-bold text-primary uppercase mb-4 leading-tight">
-              Galerie photo
+            <h1 className="font-display text-3xl sm:text-5xl md:text-7xl font-bold uppercase mb-4 leading-tight">
+              <span className="text-primary-foreground text-5xl">Galerie photo</span><br />
+              <span className="italic font-normal text-primary-foreground/80 text-xl">
+                Découvrez l'univers gourmand de Caepus
+              </span>
             </h1>
-            <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">
-              — Caepus —
-            </p>
-            <p className="text-base md:text-lg text-foreground/70 max-w-2xl leading-relaxed font-body">
-              Découvrez en images l'univers gourmand du restaurant traiteur Caepus à Neuilly-sur-Seine.
-              Lunchbox, plateaux repas, cuisine maison et desserts&nbsp;: une cuisine fraîche et généreuse
-              préparée chaque jour avec des produits de saison.
+            <p className="text-sm tracking-[0.3em] uppercase text-primary-foreground/60">
+              ​
             </p>
           </div>
         </section>
