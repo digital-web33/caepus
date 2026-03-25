@@ -117,7 +117,7 @@ const Accueil = () => {
           <div className="w-8 h-0.5 bg-primary/30 mx-auto mb-8" />
           <div className="grid md:grid-cols-3 gap-8 mt-10">
             {[
-              { title: "Chaque jour", text: "Sur place ou à emporter · Paris 1er — Chaque jour, une nouvelle sélection : plats chauds mijotés, salades fraîches, tartes salées et sucrées, desserts maison." },
+              { title: "Chaque jour", text: "Sur place ou à emporter · Paris 1er — Chaque jour, une nouvelle sélection : plats chauds mijotés, salades, tartes salées et sucrées, desserts maison." },
               { title: "Fait maison", text: "Cuisine fraîche et de saison, préparée chaque matin à partir des produits du jour." },
               { title: "Les classiques", text: "Bien sûr, les incontournables sont toujours là ! Saumon teriyaki, bowls généreux, bo-bun, soupes chaudes ou froides, sandwichs chauds, banh-mi toasté, smoothies et jus de fruits frais pressés." },
             ].map((item) => (
@@ -128,7 +128,7 @@ const Accueil = () => {
               </div>
             ))}
           </div>
-          <p className="text-xs tracking-[0.3em] uppercase text-primary/50 mt-8">Ouvert du lundi au samedi, à partir de 11h</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-primary/50 mt-8">Ouvert du lundi au vendredi, à partir de 11h</p>
         </div>
       </section>
 
