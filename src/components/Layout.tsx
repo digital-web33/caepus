@@ -20,7 +20,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       {/* NAV */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary shadow-md">
-        <div className="w-full px-10 py-5 flex items-center justify-between">
+        <div className="max-w-[1260px] w-full mx-auto px-0 py-5 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0 flex flex-col items-start leading-none gap-1">
             <span className="font-display text-primary-foreground text-4xl tracking-[0.28em] uppercase font-extralight">Caepus</span>
