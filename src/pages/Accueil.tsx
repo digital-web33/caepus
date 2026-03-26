@@ -89,9 +89,14 @@ const Accueil = () => {
                 <p>
                   La famille s'agrandit ! En septembre, Cécile et sa fille Léa ouvrent un nouveau concept à Neuilly-sur-Seine. Retrouvez-y toutes nos tartes salées et sucrées — celles que vous aimez depuis les débuts de Tarte Julie.
                 </p>
-                <p className="font-medium text-primary/80">
-                  À bientôt à Neuilly-sur-Seine et sur Instagram…
-                </p>
+                <a
+                  href="https://www.delatarte.fr/accueil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block font-medium text-primary underline underline-offset-4 hover:text-primary/70 transition-colors"
+                >
+                  Découvrez De la Tarte, notre nouveau concept à Neuilly-sur-Seine →
+                </a>
               </div>
             </div>
             <div>
