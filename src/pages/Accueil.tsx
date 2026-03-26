@@ -130,7 +130,7 @@ const Accueil = () => {
       </section>
 
       {/* L'ENGAGEMENT */}
-      <section className="bg-background border-y border-primary/10">
+      <section className="bg-muted border-y border-border">
         <div className="max-w-5xl mx-auto px-8 py-24">
           <p className="text-xs tracking-[0.35em] text-primary/60 uppercase mb-3">L'engagement</p>
           <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase mb-12">
