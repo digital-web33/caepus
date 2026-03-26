@@ -79,7 +79,7 @@ const Accueil = () => {
             <div className="space-y-5">
               <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">L'équipe</p>
               <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
-                <span className="italic font-normal text-primary">équipe, une famille</span>
+                <span className="italic font-normal text-primary">plus qu'une équipe, une famille</span>
               </h2>
               <div className="w-8 h-0.5 bg-primary/30" />
               <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
@@ -125,7 +125,7 @@ const Accueil = () => {
               </div>
             ))}
           </div>
-          <p className="text-xs tracking-[0.3em] uppercase text-primary/50 mt-8">Ouvert du lundi au vendredi, à partir de 11h</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-primary/50 mt-8">Ouvert du lundi au vendredi, de 11h à 16h</p>
         </div>
       </section>
 
