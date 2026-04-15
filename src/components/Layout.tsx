@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
-import personnageImg from "@/assets/personnage-pattern.png";
 
 const NAV_LINKS = [
   { label: "Une maison de famille", href: "/" },
@@ -90,14 +89,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         )}
       </header>
 
-      {/* Fond plein écran : illustration fixe derrière tout */}
+      {/* Fond premium subtil */}
       <div
         className="fixed top-[72px] left-0 right-0 bottom-0 z-0 pointer-events-none"
         style={{
-          backgroundImage: `url(${personnageImg})`,
-          backgroundSize: "100% auto",
-          backgroundPosition: "center top",
-          backgroundRepeat: "no-repeat",
+          background: `
+            radial-gradient(ellipse 80% 60% at 20% 10%, hsl(150 42% 28% / 0.06) 0%, transparent 60%),
+            radial-gradient(ellipse 60% 50% at 80% 30%, hsl(150 42% 28% / 0.04) 0%, transparent 50%),
+            radial-gradient(ellipse 70% 40% at 50% 80%, hsl(42 47% 80% / 0.15) 0%, transparent 60%),
+            linear-gradient(180deg, hsl(42 47% 95%) 0%, hsl(42 40% 92%) 50%, hsl(42 47% 95%) 100%)
+          `,
         }}
       />
 
