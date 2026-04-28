@@ -96,7 +96,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         style={{
           backgroundImage: `url(${fondVisages})`,
           backgroundRepeat: "repeat",
-          backgroundSize: "600px auto",
+          backgroundSize: "1100px auto",
         }}
       />
 
