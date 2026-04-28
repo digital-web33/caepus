@@ -95,9 +95,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         className="fixed top-[72px] left-0 right-0 bottom-0 z-0 pointer-events-none"
         style={{
           backgroundImage: `url(${fondVisages})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundRepeat: "repeat",
+          backgroundSize: "500px auto",
         }}
       />
 
