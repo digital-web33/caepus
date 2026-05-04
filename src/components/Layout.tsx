@@ -1,4 +1,5 @@
 import { useState } from "react";
+import personnagePattern from "/uploads/test 3 bis.png";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
 import fondVisages from "@/assets/fond-visages.png";
@@ -99,11 +100,15 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           backgroundSize: "1600px auto",
         }}
       />
+      <div
+        className="fixed top-[72px] left-0 right-0 bottom-0 z-0 pointer-events-none bg-no-repeat bg-cover bg-center"
+        style={{ backgroundImage: `url(${personnagePattern})` }}
+      />
 
       {/* Contenu qui glisse par-dessus le fond fixe */}
       {/* pt-[72px] = hauteur nav, puis mt-[120px] pour laisser les figurines visibles */}
       <main className="relative z-10 pt-[72px]">
-          <div className="max-w-[1260px] mx-auto mt-[120px] mb-[120px] bg-background shadow-xl border-2 border-black">
+          <div className="max-w-[1600px] mx-auto mt-[120px] mb-[120px] bg-background shadow-xl border-4 border-black">
             {children}
           </div>
       </main>
