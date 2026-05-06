@@ -59,7 +59,7 @@ const Restaurant = () => {
                 </p>
               </div>
               <a
-                href="https://drive.google.com/file/d/1q8fMIXt0as1qxQWp0vNgIv3zy3PKC6YR/view"
+                href="https://drive.google.com/file/d/1q8fMIXt0as1qxQWp0vNgIv3zy3PKC6YR/preview"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-2 bg-primary text-primary-foreground px-7 py-3 text-xs tracking-[0.15em] uppercase font-medium hover:bg-primary/90 transition-colors rounded-sm"
@@ -88,7 +88,7 @@ const Restaurant = () => {
                 Nos lunchbox sont gourmandes et généreuses. Idéales pour un event de dernière minute, un shooting, ou un déjeuner groupé entre collaborateurs…
               </p>
               <a
-                href="https://drive.google.com/file/d/1OgHCR6rn2GqeTaYi682KkwmymGd1FgtX/view"
+                href="https://drive.google.com/file/d/1OgHCR6rn2GqeTaYi682KkwmymGd1FgtX/preview"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-2 bg-primary text-primary-foreground px-7 py-3 text-xs tracking-[0.15em] uppercase font-medium hover:bg-primary/90 transition-colors rounded-sm"
