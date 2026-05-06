@@ -1,5 +1,4 @@
 import traiteurSpread from "@/assets/traiteur-spread.jpg";
-import traiteurLunchbox from "@/assets/traiteur-lunchbox.jpg";
 import traiteurService from "@/assets/traiteur-service.jpg";
 
 const Traiteur = () => {
@@ -60,49 +59,8 @@ const Traiteur = () => {
         </div>
       </section>
 
-      {/* Section 2 — Lunchbox & Plateaux repas + photo */}
+      {/* Section 2 — Nos services + photo */}
       <section className="bg-primary/5 border-b border-primary/10">
-        <div className="max-w-5xl mx-auto px-8 py-20">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-
-            {/* Texte */}
-            <div className="space-y-5">
-              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Lunchbox & Plateaux repas</p>
-              <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
-                Plateaux repas,<br /><span className="italic font-normal text-primary">lunchbox & livraison</span>
-              </h2>
-              <div className="w-8 h-0.5 bg-primary/30" />
-              <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
-                <p>
-                  Nos plateaux repas sont confectionnés le matin même, dans notre laboratoire de la rue Duphot. Produits frais, majoritairement de saison.
-                </p>
-                <p>
-                  Nos lunchbox sont gourmandes et généreuses — idéales pour un event de dernière minute, un shooting ou un déjeuner groupé entre collaborateurs.
-                </p>
-                <p>
-                  Du mardi au vendredi, livraison à domicile dans Paris et proche banlieue. Tous nos plateaux peuvent être adaptés <span className="uppercase tracking-wide">sans gluten</span>.
-                </p>
-              </div>
-            </div>
-
-            {/* Photo */}
-            <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10 aspect-[4/3]">
-              <img
-                src={traiteurLunchbox}
-                alt="Plateaux repas et lunchbox Caepus"
-                loading="lazy"
-                width={900}
-                height={700}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3 — Nos services + photo */}
-      <section className="bg-background border-b border-primary/10">
         <div className="max-w-5xl mx-auto px-8 py-20">
           <div className="grid md:grid-cols-2 gap-16 items-center">
 
@@ -148,7 +106,7 @@ const Traiteur = () => {
       </section>
 
       {/* Carte traiteur – téléchargement */}
-      <section className="bg-primary/5 border-t border-primary/10">
+      <section className="bg-background border-t border-primary/10">
         <div className="max-w-5xl mx-auto px-8 py-20 text-center">
           <h2 className="font-display text-4xl font-bold text-primary mb-4">
             Notre carte traiteur

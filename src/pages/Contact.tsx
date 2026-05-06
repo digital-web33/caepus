@@ -8,6 +8,12 @@ import logoTomFord from "@/assets/logo-tomford.png";
 import logoWhiteCase from "@/assets/logo-whitecase.png";
 import logoShearman from "@/assets/logo-shearman.png";
 import logoRacine from "@/assets/logo-racine.png";
+import logoGuerlain from "@/assets/logo-guerlain.png";
+import logoEsteeLauder from "@/assets/logo-estee-lauder.png";
+import logoEniPlenitude from "@/assets/logo-eni-plenitude.png";
+import logoMorning from "@/assets/logo-morning.png";
+import logoMac from "@/assets/logo-mac.png";
+import logoLoreal from "@/assets/logo-loreal.png";
 
 const brands = [
   { src: logoSamsonite, alt: "Samsonite" },
@@ -20,6 +26,12 @@ const brands = [
   { src: logoWhiteCase, alt: "White & Case" },
   { src: logoShearman, alt: "Shearman & Sterling" },
   { src: logoRacine, alt: "Racine Avocats" },
+  { src: logoGuerlain, alt: "Guerlain" },
+  { src: logoEsteeLauder, alt: "Estée Lauder" },
+  { src: logoEniPlenitude, alt: "Eni Plenitude" },
+  { src: logoMorning, alt: "Morning" },
+  { src: logoMac, alt: "M·A·C" },
+  { src: logoLoreal, alt: "L'Oréal" },
 ];
 
 const Contact = () => {
@@ -164,14 +176,15 @@ const Contact = () => {
           <h2 className="font-display text-3xl font-bold text-primary italic font-normal mb-10">
             Ils nous font confiance
           </h2>
-          <div className="grid grid-cols-3 sm:grid-cols-5 gap-x-10 gap-y-8 items-center justify-items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-10 gap-y-10 items-center justify-items-center">
             {brands.map((brand) => (
-              <img
-                key={brand.alt}
-                src={brand.src}
-                alt={brand.alt}
-                className="h-10 w-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
-              />
+              <div key={brand.alt} className="flex items-center justify-center h-20 w-36">
+                <img
+                  src={brand.src}
+                  alt={brand.alt}
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
             ))}
           </div>
         </div>

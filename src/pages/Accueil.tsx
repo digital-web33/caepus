@@ -58,13 +58,13 @@ const Accueil = () => {
               <div className="w-8 h-0.5 bg-primary/30" />
               <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
                 <p>
-                  Caepus, c'est avant tout une histoire de famille qui dure depuis 40 ans. Certains tombent dans la marmite — Cécile, fondatrice de Caepus, est tombée, elle, dans la tarte : celle de sa maman, créatrice de la célèbre marque <em>«&nbsp;Tarte Julie&nbsp;»</em>.
+                  Caepus, c'est avant tout une histoire de famille qui dure depuis 40 ans. Certains tombent dans la marmite. Cécile, fondatrice de Caepus, est tombée, elle, dans la tarte : celle de sa maman, créatrice de la célèbre marque <em>«&nbsp;Tarte Julie&nbsp;»</em>.
                 </p>
                 <p>
                   Pâte fine, caramel croquant, fruits frais… autant de saveurs qui ont bercé son enfance. Une passion est née. Le fil conducteur de toute cette aventure ? Le bon, le frais, le fait maison.
                 </p>
                 <p className="font-bold text-primary text-base leading-relaxed">
-                  Avec les années, ces valeurs n'ont pas changé. Chez Caepus, la cuisine est familiale, innovante, originale — et elle se renouvelle sans cesse depuis sa création.
+                  Avec les années, ces valeurs n'ont pas changé. Chez Caepus, la cuisine est familiale, innovante, originale et se renouvelle sans cesse depuis sa création.
                 </p>
               </div>
             </div>
@@ -121,7 +121,7 @@ const Accueil = () => {
           <div className="grid md:grid-cols-2 gap-8 mt-10 max-w-2xl mx-auto">
             {[
               { title: "Chaque jour", text: "Sur place et à emporter · Paris 1er — Chaque jour, une nouvelle sélection : plats chauds mijotés, salades, tartes salées et sucrées, desserts maison." },
-              { title: "Les classiques", text: "Bien sûr, les incontournables sont toujours là ! Saumon teriyaki, bowls généreux, bo-bun, soupes chaudes ou froides, sandwichs chauds, banh-mi toasté, smoothies et jus de fruits frais pressés." },
+              { title: "Les classiques", text: "Bien sûr, les incontournables sont toujours là ! Saumon teriyaki, bo-bun, bowls généreux, soupes chaudes ou froides, sandwichs chauds, banh-mi toasté, smoothies et jus de fruits frais pressés." },
             ].map((item) => (
               <div key={item.title} className="border border-primary/20 p-7 text-left hover:bg-primary/5 transition-colors rounded-sm">
                 <h3 className="font-display text-xl font-bold text-primary mb-3">{item.title}</h3>

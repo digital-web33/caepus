@@ -80,7 +80,7 @@ const Restaurant = () => {
             {/* Texte */}
             <div className="space-y-5">
               <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">Lunchbox</p>
-              <h2 className="font-display text-4xl font-bold text-primary leading-tight">
+              <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
                 Lunchbox
               </h2>
               <div className="w-8 h-0.5 bg-primary/30" />
