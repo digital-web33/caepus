@@ -36,7 +36,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <Link
                   key={l.label}
                   to={l.href}
-                  className={`relative text-[13px] tracking-[0.06em] font-light transition-colors duration-200
+                  className={`relative text-[15px] tracking-[0.06em] font-light transition-colors duration-200
                     after:absolute after:bottom-[-4px] after:left-0 after:h-[1.5px] after:transition-[width] after:duration-300 after:ease-out
                     ${isActive
                       ? "text-[hsl(var(--nav-active))] after:w-full after:bg-[hsl(var(--nav-active))]"

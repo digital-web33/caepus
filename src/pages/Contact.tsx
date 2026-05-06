@@ -172,13 +172,13 @@ const Contact = () => {
 
       {/* Ils nous font confiance */}
       <section className="bg-primary/5 border-t border-primary/10">
-        <div className="max-w-4xl mx-auto px-8 py-16 text-center">
+        <div className="max-w-6xl mx-auto px-8 py-16 text-center">
           <h2 className="font-display text-3xl font-bold text-primary italic font-normal mb-10">
             Ils nous font confiance
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-10 gap-y-10 items-center justify-items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-12 gap-y-10 items-center justify-items-center">
             {brands.map((brand) => (
-              <div key={brand.alt} className="flex items-center justify-center h-20 w-36">
+              <div key={brand.alt} className="flex items-center justify-center h-20 w-44">
                 <img
                   src={brand.src}
                   alt={brand.alt}
