@@ -115,13 +115,13 @@ const Traiteur = () => {
             Vous y trouverez quelques idées de buffets, cocktails clé en main, tout pour vous faciliter la vie.
           </p>
           <a
-            href="#"
-            className="inline-block bg-primary text-primary-foreground px-8 py-4 text-sm tracking-[0.15em] uppercase font-medium hover:bg-primary/90 transition-colors rounded-sm cursor-not-allowed opacity-60"
-            aria-disabled="true"
+            href="https://drive.google.com/file/d/1ND5LD3d7JR-yKnnX35uw3cUh9vSTb6FJ/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-primary text-primary-foreground px-8 py-4 text-sm tracking-[0.15em] uppercase font-medium hover:bg-primary/90 transition-colors rounded-sm"
           >
             Télécharger la carte buffet – cocktail
           </a>
-          <p className="text-xs text-muted-foreground mt-4 italic">Lien à venir</p>
         </div>
       </section>
 
