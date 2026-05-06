@@ -138,7 +138,18 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <span>·</span>
             <a href="/cookies" className="hover:text-primary-foreground transition-colors">Cookies</a>
           </div>
-          <p className="text-xs text-primary-foreground/40">© 2025 Caepus. Tous droits réservés.</p>
+          <p className="text-xs text-primary-foreground/40">© 2026 Caepus. Tous droits réservés.</p>
+          <p className="text-[10px] text-primary-foreground/30 tracking-wide">
+            Site conçu par{" "}
+            <a
+              href="https://digital-web33.fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary-foreground transition-colors underline-offset-2 hover:underline"
+            >
+              digital-web33
+            </a>
+          </p>
         </div>
       </footer>
     </div>

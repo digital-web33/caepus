@@ -23,5 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Notes/messages locaux
+# Notes/messages locaux et backups credentials
 message-*.txt
+code *.txt
+*.local.txt

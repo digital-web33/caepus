@@ -7,6 +7,7 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  functions = "netlify/functions"
 
 # Nécessaire pour le routing React SPA (react-router-dom)
 [[redirects]]

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import logoSamsonite from "@/assets/logo-samsonite.png";
 import logoChanel from "@/assets/logo-chanel.png";
 import logoBalmain from "@/assets/logo-balmain.png";
@@ -34,7 +35,60 @@ const brands = [
   { src: logoLoreal, alt: "L'Oréal" },
 ];
 
+type FormStatus = "idle" | "submitting" | "success" | "error";
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    prenom: "",
+    nom: "",
+    email: "",
+    telephone: "",
+    message: "",
+    "bot-field": "",
+  });
+  const [status, setStatus] = useState<FormStatus>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("submitting");
+    setErrorMessage("");
+
+    try {
+      const res = await fetch("/.netlify/functions/contact-form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || "Une erreur est survenue.");
+      }
+
+      setStatus("success");
+      setFormData({
+        prenom: "",
+        nom: "",
+        email: "",
+        telephone: "",
+        message: "",
+        "bot-field": "",
+      });
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage(
+        err instanceof Error ? err.message : "Une erreur est survenue."
+      );
+    }
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero */}
@@ -114,12 +168,31 @@ const Contact = () => {
               <h2 className="font-display text-3xl font-bold text-primary uppercase mb-6">
                 Nous écrire
               </h2>
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit} noValidate>
+                {/* Honeypot anti-spam — caché aux humains */}
+                <div className="absolute -left-[9999px]" aria-hidden="true">
+                  <label>
+                    Ne pas remplir :
+                    <input
+                      type="text"
+                      name="bot-field"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={formData["bot-field"]}
+                      onChange={handleChange}
+                    />
+                  </label>
+                </div>
+
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-1">Prénom</label>
                     <input
                       type="text"
+                      name="prenom"
+                      required
+                      value={formData.prenom}
+                      onChange={handleChange}
                       className="w-full border border-primary/20 bg-background px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors"
                       placeholder="Prénom"
                     />
@@ -128,6 +201,10 @@ const Contact = () => {
                     <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-1">Nom</label>
                     <input
                       type="text"
+                      name="nom"
+                      required
+                      value={formData.nom}
+                      onChange={handleChange}
                       className="w-full border border-primary/20 bg-background px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors"
                       placeholder="Nom"
                     />
@@ -137,6 +214,10 @@ const Contact = () => {
                   <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-1">Email</label>
                   <input
                     type="email"
+                    name="email"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full border border-primary/20 bg-background px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors"
                     placeholder="Email"
                   />
@@ -145,6 +226,9 @@ const Contact = () => {
                   <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-1">Téléphone</label>
                   <input
                     type="tel"
+                    name="telephone"
+                    value={formData.telephone}
+                    onChange={handleChange}
                     className="w-full border border-primary/20 bg-background px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors"
                     placeholder="Téléphone"
                   />
@@ -152,17 +236,33 @@ const Contact = () => {
                 <div>
                   <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-1">Message</label>
                   <textarea
+                    name="message"
+                    required
                     rows={5}
+                    value={formData.message}
+                    onChange={handleChange}
                     className="w-full border border-primary/20 bg-background px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors resize-none"
                     placeholder="Votre message…"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="bg-primary text-primary-foreground px-8 py-3 text-xs tracking-[0.2em] uppercase font-medium hover:bg-primary/90 transition-colors"
+                  disabled={status === "submitting"}
+                  className="bg-primary text-primary-foreground px-8 py-3 text-xs tracking-[0.2em] uppercase font-medium hover:bg-primary/90 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Envoyer
+                  {status === "submitting" ? "Envoi en cours…" : "Envoyer"}
                 </button>
+
+                {status === "success" && (
+                  <p className="text-sm text-primary font-medium pt-2">
+                    Merci ! Votre message a bien été envoyé, nous vous répondons sous 24h.
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="text-sm text-destructive font-medium pt-2">
+                    Une erreur est survenue : {errorMessage} Réessayez ou écrivez-nous directement à contact@caepus.fr.
+                  </p>
+                )}
               </form>
             </div>
 
