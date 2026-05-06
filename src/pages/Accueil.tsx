@@ -58,12 +58,12 @@ const Accueil = () => {
               <div className="w-8 h-0.5 bg-primary/30" />
               <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
                 <p>
-                  Caepus, c'est avant tout une histoire de famille qui dure depuis plus de 30 ans. Certains tombent dans la marmite — Cécile, fondatrice de Caepus, est tombée, elle, dans la tarte : celle de sa maman, créatrice de la célèbre marque <em>«&nbsp;Tarte Julie&nbsp;»</em>.
+                  Caepus, c'est avant tout une histoire de famille qui dure depuis 40 ans. Certains tombent dans la marmite — Cécile, fondatrice de Caepus, est tombée, elle, dans la tarte : celle de sa maman, créatrice de la célèbre marque <em>«&nbsp;Tarte Julie&nbsp;»</em>.
                 </p>
                 <p>
                   Pâte fine, caramel croquant, fruits frais… autant de saveurs qui ont bercé son enfance. Une passion est née. Le fil conducteur de toute cette aventure ? Le bon, le frais, le fait maison.
                 </p>
-                <p className="font-medium text-primary/80">
+                <p className="font-bold text-primary text-base leading-relaxed">
                   Avec les années, ces valeurs n'ont pas changé. Chez Caepus, la cuisine est familiale, innovante, originale — et elle se renouvelle sans cesse depuis sa création.
                 </p>
               </div>
@@ -79,15 +79,15 @@ const Accueil = () => {
             <div className="space-y-5">
               <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">L'équipe</p>
               <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
-                <span className="italic font-normal text-primary">plus qu'une équipe, une famille</span>
+                La famille<br /><span className="italic font-normal text-primary">s'agrandit</span>
               </h2>
               <div className="w-8 h-0.5 bg-primary/30" />
               <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
                 <p>
-                  Plus qu'une équipe, une véritable famille ! Des collaborateurs passionnés, soudés et attachés au savoir-faire maison.
+                  En 2024, Cécile et sa fille Léa ont ouvert un nouveau concept de tarterie à Neuilly-sur-Seine.
                 </p>
                 <p>
-                  La famille s'agrandit ! En septembre, Cécile et sa fille Léa ouvrent un nouveau concept à Neuilly-sur-Seine. Retrouvez-y toutes nos tartes salées et sucrées — celles que vous aimez depuis les débuts de Tarte Julie.
+                  <strong>De la Tarte</strong> est une maison de famille qui reprend le savoir-faire de la grand-mère, fondatrice de <em>Tarte Julie</em>. Vous y retrouverez toutes les tartes salées et sucrées — celles que vous avez tant aimées depuis la création de Tarte Julie — mais aussi leur service traiteur sur mesure.
                 </p>
                 <a
                   href="https://www.delatarte.fr/accueil"

@@ -10,9 +10,9 @@ const Restaurant = () => {
       {/* Hero */}
       <section className="bg-primary text-primary-foreground">
         <div className="max-w-5xl mx-auto px-8 py-24">
-          <h1 className="font-display text-3xl sm:text-5xl md:text-7xl font-bold uppercase mb-4 leading-tight">
-            <span className="text-primary-foreground text-4xl">Plateaux repas</span><br />
-            <span className="italic font-normal text-primary-foreground/80 text-4xl">& lunchbox</span>
+          <h1 className="font-display text-6xl md:text-7xl font-bold uppercase leading-[1] mb-6">
+            <span className="text-primary-foreground">Plateaux repas</span><br />
+            <span className="italic font-normal text-primary-foreground/80">& lunchbox</span>
           </h1>
           <p className="text-sm tracking-[0.3em] uppercase text-primary-foreground/60">
             Livrés partout en Île-de-France
@@ -40,7 +40,7 @@ const Restaurant = () => {
             {/* Texte */}
             <div className="space-y-5">
               <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">​</p>
-              <h2 className="font-display text-4xl font-bold text-primary leading-tight">
+              <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
                 Plateaux repas
               </h2>
               <div className="w-8 h-0.5 bg-primary/30" />

@@ -9,9 +9,9 @@ const Traiteur = () => {
       {/* Hero – fond vert uni, titre blanc */}
       <section className="bg-primary text-primary-foreground">
         <div className="max-w-5xl mx-auto px-8 py-24">
-          <h1 className="font-display text-3xl sm:text-5xl md:text-7xl font-bold uppercase mb-4 leading-tight">
-            <span className="text-primary-foreground text-5xl">Traiteur</span><br />
-            <span className="italic font-normal text-primary-foreground/80 text-5xl">événementiel</span>
+          <h1 className="font-display text-6xl md:text-7xl font-bold uppercase leading-[1] mb-6">
+            <span className="text-primary-foreground">Traiteur</span><br />
+            <span className="italic font-normal text-primary-foreground/80">événementiel</span>
           </h1>
           <p className="text-sm tracking-[0.3em] uppercase text-primary-foreground/60">
             Une offre sur-mesure pour vos événements professionnels et privés
@@ -45,7 +45,7 @@ const Traiteur = () => {
               <div className="w-8 h-0.5 bg-primary/30" />
               <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
                 <p>
-                  Depuis plus de 20 ans, nos équipes accompagnent particuliers et entreprises dans l'organisation de leurs événements, pour 10 à 300 convives.
+                  Depuis 40 ans, nos équipes accompagnent particuliers et entreprises dans l'organisation de leurs événements, pour 10 à 300 convives.
                 </p>
                 <p>
                   Nous intervenons à tous les moments de la journée : petit-déjeuner, pause matinale, goûter, apéritif, déjeuner, dîner. Pour chaque occasion, des plats familiaux chauds ou froids préparés avec soin.
