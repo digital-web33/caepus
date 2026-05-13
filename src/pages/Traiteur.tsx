@@ -1,4 +1,4 @@
-import traiteurSpread from "@/assets/traiteur-spread.jpg";
+const traiteurSpread = "/uploads/PHOTO 3-compressed.webp";
 import traiteurService from "@/assets/traiteur-service.jpg";
 
 const Traiteur = () => {

@@ -108,7 +108,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       {/* Contenu qui glisse par-dessus le fond fixe */}
       {/* pt-[72px] = hauteur nav, puis mt-[120px] pour laisser les figurines visibles */}
       <main className="relative z-10 pt-[72px]">
-          <div className="max-w-[1600px] mx-auto mt-[120px] mb-[120px] bg-background shadow-xl border-4 border-black">
+          <div className="max-w-[1600px] mx-auto mt-[180px] mb-[120px] bg-background shadow-xl border-t-4 border-b-4 border-black">
             {children}
           </div>
       </main>

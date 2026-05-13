@@ -1,6 +1,7 @@
-import heroPortrait from "@/assets/hero-portrait.jpg";
 import tartsFlat from "@/assets/tarts-flatlay.jpg";
 import chefPortrait from "@/assets/chef-portrait.jpg";
+
+const heroPortrait = "/uploads/PHOTO 1-compressed.webp";
 
 const Accueil = () => {
   return (
@@ -74,38 +75,39 @@ const Accueil = () => {
 
       {/* ÉQUIPE */}
       <section className="bg-primary/5 border-y border-primary/10">
-        <div className="max-w-5xl mx-auto px-8 py-24">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="space-y-5">
-              <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">L'équipe</p>
-              <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
-                La famille<br /><span className="italic font-normal text-primary">s'agrandit</span>
-              </h2>
-              <div className="w-8 h-0.5 bg-primary/30" />
-              <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
-                <p>
-                  En 2024, Cécile et sa fille Léa ont ouvert un nouveau concept de tarterie à Neuilly-sur-Seine.
-                </p>
-                <p>
-                  <strong>De la Tarte</strong> est une maison de famille qui reprend le savoir-faire de la grand-mère, fondatrice de <em>Tarte Julie</em>. Vous y retrouverez toutes les tartes salées et sucrées — celles que vous avez tant aimées depuis la création de Tarte Julie — mais aussi leur service traiteur sur mesure.
-                </p>
-                <a
-                  href="https://www.delatarte.fr/accueil"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block font-medium text-primary underline underline-offset-4 hover:text-primary/70 transition-colors"
-                >
-                  Découvrez De la Tarte, notre nouveau concept à Neuilly-sur-Seine →
-                </a>
-              </div>
+        <div className="max-w-5xl mx-auto px-8 py-24 space-y-12">
+          <div className="space-y-5 max-w-2xl">
+            <p className="text-xs tracking-[0.35em] text-primary/60 uppercase">L'équipe</p>
+            <h2 className="font-display text-4xl font-bold text-primary leading-tight uppercase">
+              La famille<br /><span className="italic font-normal text-primary">s'agrandit</span>
+            </h2>
+            <div className="w-8 h-0.5 bg-primary/30" />
+            <div className="space-y-4 text-sm leading-relaxed text-foreground/70">
+              <p>
+                En 2024, Cécile et sa fille Léa ont ouvert un nouveau concept de tarterie à Neuilly-sur-Seine.
+              </p>
+              <p>
+                <strong>De la Tarte</strong> est une maison de famille qui reprend le savoir-faire de la grand-mère, fondatrice de <em>Tarte Julie</em>. Vous y retrouverez toutes les tartes salées et sucrées — celles que vous avez tant aimées depuis la création de Tarte Julie — mais aussi leur service traiteur sur mesure.
+              </p>
+              <a
+                href="https://www.delatarte.fr/accueil"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block font-medium text-primary underline underline-offset-4 hover:text-primary/70 transition-colors"
+              >
+                Découvrez De la Tarte, notre nouveau concept à Neuilly-sur-Seine →
+              </a>
             </div>
-            <div>
-              <img
-                src={chefPortrait}
-                alt="Cécile, fondatrice de Caepus"
-                className="w-full max-w-sm mx-auto object-cover rounded-2xl shadow-lg border border-primary/10"
-              />
-            </div>
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-lg border border-primary/10" style={{padding: "56.25% 0 0 0", position: "relative"}}>
+            <iframe
+              src="https://player.vimeo.com/video/1191824884?badge=0&autopause=0&player_id=0&app_id=58479"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%"}}
+              title="Vidéo Caepus"
+            />
           </div>
         </div>
       </section>

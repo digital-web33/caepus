@@ -97,14 +97,12 @@ const Restaurant = () => {
               </a>
             </div>
 
-            {/* Vidéo */}
+            {/* Photo LB */}
             <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10 aspect-[4/3]">
-              <video
-                key={videoKey + "-lunchbox"}
-                src="/uploads/hero-lunchbox.mp4"
-                autoPlay
-                muted
-                playsInline
+              <img
+                src="/uploads/PHOTO LB-compressed.webp"
+                alt="Lunchbox Caepus"
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
