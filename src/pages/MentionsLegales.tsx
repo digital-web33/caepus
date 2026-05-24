@@ -85,7 +85,7 @@ const MentionsLegales = () => {
           <div className="border-b border-primary/10 pb-8">
             <h2 className="font-display text-2xl font-bold text-primary uppercase mb-4">7. Cookies</h2>
             <p className="text-sm text-foreground/80 leading-relaxed">
-              Ce site utilise des cookies afin d'améliorer votre expérience de navigation et de réaliser des statistiques de visites. Pour en savoir plus, consultez notre{" "}
+              Ce site ne dépose aucun cookie de mesure d'audience, de publicité ou de traçage. Seuls quelques cookies tiers peuvent être déposés par les services intégrés (lecteur vidéo Vimeo). Pour en savoir plus, consultez notre{" "}
               <a href="/cookies" className="text-primary hover:underline">Politique de cookies</a>.
             </p>
           </div>
