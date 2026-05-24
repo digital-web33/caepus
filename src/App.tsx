@@ -16,6 +16,7 @@ import Plaquette from "./pages/Plaquette";
 import MentionsLegales from "./pages/MentionsLegales";
 import CGV from "./pages/CGV";
 import Cookies from "./pages/Cookies";
+import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/mentions-legales" element={<Layout><MentionsLegales /></Layout>} />
           <Route path="/cgv" element={<Layout><CGV /></Layout>} />
           <Route path="/cookies" element={<Layout><Cookies /></Layout>} />
+          <Route path="/politique-confidentialite" element={<Layout><PolitiqueConfidentialite /></Layout>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

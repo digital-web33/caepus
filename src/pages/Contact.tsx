@@ -46,6 +46,7 @@ const Contact = () => {
     message: "",
     "bot-field": "",
   });
+  const [rgpdAccepted, setRgpdAccepted] = useState(false);
   const [status, setStatus] = useState<FormStatus>("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -81,6 +82,7 @@ const Contact = () => {
         message: "",
         "bot-field": "",
       });
+      setRgpdAccepted(false);
     } catch (err) {
       setStatus("error");
       setErrorMessage(
@@ -245,9 +247,24 @@ const Contact = () => {
                     placeholder="Votre message…"
                   />
                 </div>
+                <div className="flex items-start gap-3 pt-2">
+                  <input
+                    type="checkbox"
+                    id="rgpd"
+                    checked={rgpdAccepted}
+                    onChange={(e) => setRgpdAccepted(e.target.checked)}
+                    required
+                    className="mt-1 h-4 w-4 accent-primary cursor-pointer flex-shrink-0"
+                  />
+                  <label htmlFor="rgpd" className="text-xs text-muted-foreground leading-relaxed cursor-pointer">
+                    J'accepte que les informations saisies dans ce formulaire soient utilisées par Caepus pour répondre à ma demande. Conformément au RGPD, je dispose d'un droit d'accès, de rectification et de suppression de mes données. Pour en savoir plus, consultez notre{" "}
+                    <a href="/politique-confidentialite" className="text-primary hover:underline">politique de confidentialité</a>.
+                  </label>
+                </div>
+
                 <button
                   type="submit"
-                  disabled={status === "submitting"}
+                  disabled={status === "submitting" || !rgpdAccepted}
                   className="bg-primary text-primary-foreground px-8 py-3 text-xs tracking-[0.2em] uppercase font-medium hover:bg-primary/90 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                 >
                   {status === "submitting" ? "Envoi en cours…" : "Envoyer"}

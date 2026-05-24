@@ -131,10 +131,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <Instagram size={18} />
             </span>
           </div>
-          <div className="flex items-center gap-5 text-[10px] tracking-[0.15em] uppercase text-primary-foreground/40">
+          <div className="flex items-center gap-5 text-[10px] tracking-[0.15em] uppercase text-primary-foreground/40 flex-wrap justify-center">
             <a href="/mentions-legales" className="hover:text-primary-foreground transition-colors">Mentions légales</a>
             <span>·</span>
             <a href="/cgv" className="hover:text-primary-foreground transition-colors">CGV</a>
+            <span>·</span>
+            <a href="/politique-confidentialite" className="hover:text-primary-foreground transition-colors">Confidentialité</a>
             <span>·</span>
             <a href="/cookies" className="hover:text-primary-foreground transition-colors">Cookies</a>
           </div>
