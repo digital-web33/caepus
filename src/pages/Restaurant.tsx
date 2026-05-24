@@ -1,9 +1,4 @@
-import { useLocation } from "react-router-dom";
-
 const Restaurant = () => {
-  const location = useLocation();
-  const videoKey = location.key;
-
   return (
     <div className="min-h-screen">
 
@@ -25,14 +20,12 @@ const Restaurant = () => {
         <div className="max-w-5xl mx-auto px-8 py-20">
           <div className="grid md:grid-cols-2 gap-16 items-center">
 
-            {/* Vidéo */}
+            {/* Photo */}
             <div className="overflow-hidden rounded-2xl shadow-md border border-primary/10 aspect-[4/3]">
-              <video
-                key={videoKey + "-plateaux"}
-                src="/uploads/hero-restaurant.mp4"
-                autoPlay
-                muted
-                playsInline
+              <img
+                src="/uploads/PHOTO PR-compressed.webp"
+                alt="Plateaux repas Caepus"
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>

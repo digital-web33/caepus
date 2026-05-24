@@ -1,7 +1,7 @@
-import tartsFlat from "@/assets/tarts-flatlay.jpg";
 import chefPortrait from "@/assets/chef-portrait.jpg";
 
 const heroPortrait = "/uploads/PHOTO 1-compressed.webp";
+const heritage = "/uploads/PHOTO 2-compressed.webp";
 
 const Accueil = () => {
   return (
@@ -46,8 +46,8 @@ const Accueil = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <img
-                src={tartsFlat}
-                alt="Tartes et pâtisseries maison Caepus"
+                src={heritage}
+                alt="Un héritage familial Caepus"
                 className="w-full object-cover rounded-2xl shadow-md border border-primary/10"
               />
             </div>

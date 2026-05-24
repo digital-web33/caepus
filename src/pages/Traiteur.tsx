@@ -1,5 +1,5 @@
 const traiteurSpread = "/uploads/PHOTO 3-compressed.webp";
-import traiteurService from "@/assets/traiteur-service.jpg";
+const traiteurService = "/uploads/PHOTO 4-compressed.webp";
 
 const Traiteur = () => {
   return (

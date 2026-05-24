@@ -11,7 +11,6 @@ import Traiteur from "./pages/Traiteur";
 import Galerie from "./pages/Galerie";
 import Actualites from "./pages/Actualites";
 import ArticleDetail from "./pages/ArticleDetail";
-import APropos from "./pages/APropos";
 import Contact from "./pages/Contact";
 import Plaquette from "./pages/Plaquette";
 import MentionsLegales from "./pages/MentionsLegales";
@@ -35,7 +34,6 @@ const App = () => (
           <Route path="/galerie" element={<Layout><Galerie /></Layout>} />
           <Route path="/actualites" element={<Layout><Actualites /></Layout>} />
           <Route path="/actualites/:slug" element={<Layout><ArticleDetail /></Layout>} />
-          <Route path="/a-propos" element={<Layout><APropos /></Layout>} />
           <Route path="/contact" element={<Layout><Contact /></Layout>} />
           <Route path="/plaquette/:slug" element={<Layout><Plaquette /></Layout>} />
           <Route path="/mentions-legales" element={<Layout><MentionsLegales /></Layout>} />
