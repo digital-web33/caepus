@@ -8,7 +8,7 @@ const CGV = () => {
             Conditions Générales de Vente
           </h1>
           <p className="text-sm tracking-[0.3em] uppercase text-primary-foreground/60">
-            Applicables à compter du 1er janvier 2025
+            Applicables à compter du 1er mai 2026
           </p>
         </div>
       </section>
@@ -20,7 +20,7 @@ const CGV = () => {
           <div className="border-b border-primary/10 pb-8">
             <h2 className="font-display text-2xl font-bold text-primary uppercase mb-4">Article 1 — Objet & champ d'application</h2>
             <p>
-              Les présentes Conditions Générales de Vente (CGV) régissent l'ensemble des prestations de service proposées par la société <span className="font-semibold">Caepus</span> (SARL au capital de [À COMPLÉTER] €, SIRET [À COMPLÉTER], dont le siège social est situé 17 Rue Duphot, 75001 Paris), ci-après dénommée « le Prestataire ».
+              Les présentes Conditions Générales de Vente (CGV) régissent l'ensemble des prestations de service proposées par la société <span className="font-semibold">Caepus</span>, SARL au capital de 31 735,50 €, immatriculée au RCS de Paris sous le numéro 324 030 618, SIRET 324 030 618 00031, N° TVA intracommunautaire FR7501.324030618, dont le siège social est situé 17 Rue Duphot, 75001 Paris, représentée par son gérant Yannick Garond, ci-après dénommée « le Prestataire ».
             </p>
             <p className="mt-2">
               Ces CGV s'appliquent à toute commande de prestations traiteur, plateaux-repas, lunchbox ou toute autre prestation culinaire passée par le Client auprès du Prestataire, que la commande soit effectuée en ligne, par téléphone ou par email.
@@ -103,9 +103,39 @@ const CGV = () => {
           </div>
 
           {/* Article 10 */}
+          <div className="border-b border-primary/10 pb-8">
+            <h2 className="font-display text-2xl font-bold text-primary uppercase mb-4">Article 10 — Droit de rétractation</h2>
+            <p>
+              Conformément à l'article L221-28 du Code de la consommation, le droit de rétractation prévu pour les contrats conclus à distance <span className="font-semibold">ne s'applique pas</span> aux prestations proposées par Caepus, en raison de :
+            </p>
+            <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+              <li>la nature périssable des denrées alimentaires fournies (3°) ;</li>
+              <li>la fourniture de services pleinement exécutés à une date déterminée (12°) ;</li>
+              <li>la confection de biens nettement personnalisés à la demande du Client (3°).</li>
+            </ul>
+            <p className="mt-3">
+              Le Client reconnaît expressément, au moment de la confirmation de sa commande, renoncer à tout droit de rétractation.
+            </p>
+          </div>
+
+          {/* Article 11 */}
+          <div className="border-b border-primary/10 pb-8">
+            <h2 className="font-display text-2xl font-bold text-primary uppercase mb-4">Article 11 — Médiation de la consommation</h2>
+            <p>
+              Conformément aux articles L611-1 et suivants du Code de la consommation, le Client consommateur a le droit de recourir gratuitement à un médiateur de la consommation pour la résolution amiable de tout litige l'opposant au Prestataire, après avoir tenté préalablement de le résoudre par une réclamation écrite adressée à Caepus.
+            </p>
+            <p className="mt-2">
+              <span className="font-semibold">Médiateur désigné :</span> [À COMPLÉTER — nom et coordonnées du médiateur agréé par la CECMC]
+            </p>
+            <p className="mt-2 text-xs text-muted-foreground">
+              Plateforme européenne de règlement en ligne des litiges : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">ec.europa.eu/consumers/odr</a>
+            </p>
+          </div>
+
+          {/* Article 12 */}
           <div className="pb-8">
-            <h2 className="font-display text-2xl font-bold text-primary uppercase mb-4">Article 10 — Droit applicable & litiges</h2>
-            <p>Les présentes CGV sont soumises au droit français. En cas de litige, et à défaut de règlement amiable, les tribunaux compétents du ressort du siège social de Caepus seront seuls compétents.</p>
+            <h2 className="font-display text-2xl font-bold text-primary uppercase mb-4">Article 12 — Droit applicable & litiges</h2>
+            <p>Les présentes CGV sont soumises au droit français. À défaut de règlement amiable ou de médiation, les tribunaux compétents du ressort du siège social de Caepus seront seuls compétents, sauf disposition d'ordre public contraire applicable aux consommateurs.</p>
           </div>
 
         </div>

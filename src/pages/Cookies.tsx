@@ -8,7 +8,7 @@ const Cookies = () => {
             Politique de cookies
           </h1>
           <p className="text-sm tracking-[0.3em] uppercase text-primary-foreground/60">
-            Dernière mise à jour : janvier 2025
+            Dernière mise à jour : mai 2026
           </p>
         </div>
       </section>
