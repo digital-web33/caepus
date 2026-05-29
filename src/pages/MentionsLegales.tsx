@@ -94,10 +94,19 @@ const MentionsLegales = () => {
           <div className="border-b border-primary/10 pb-8">
             <h2 className="font-display text-2xl font-bold text-primary uppercase mb-4">8. Médiateur de la consommation</h2>
             <p className="text-sm text-foreground/80 leading-relaxed mb-3">
-              Conformément aux articles L611-1 et suivants du Code de la consommation, tout client consommateur a le droit de recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable de tout litige l'opposant à la société Caepus.
+              Conformément aux articles L.611-1 et suivants et R.612-1 et suivants du Code de la consommation, tout client consommateur a le droit de recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable de tout litige l'opposant à la société Caepus.
             </p>
-            <p className="text-sm text-foreground/80 leading-relaxed">
-              <span className="font-semibold">Médiateur désigné :</span> [À COMPLÉTER — nom et coordonnées du médiateur agréé par la CECMC]
+            <p className="text-sm text-foreground/80 leading-relaxed mb-3">
+              La société Caepus a désigné le médiateur suivant :
+            </p>
+            <div className="space-y-1 text-sm text-foreground/80 leading-relaxed pl-4 border-l-2 border-primary/20">
+              <p><span className="font-semibold">CM2C</span> — Centre de la Médiation de la Consommation de Conciliateurs de Justice</p>
+              <p><span className="font-semibold">Adresse :</span> 49 Rue de Ponthieu, 75008 Paris</p>
+              <p><span className="font-semibold">Site web :</span> <a href="https://www.cm2c.net" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.cm2c.net</a></p>
+              <p><span className="font-semibold">Email :</span> <a href="mailto:cm2c@cm2c.net" className="text-primary hover:underline">cm2c@cm2c.net</a></p>
+            </div>
+            <p className="text-sm text-foreground/80 leading-relaxed mt-3">
+              Le recours à la médiation est gratuit pour le consommateur. La médiation est un processus confidentiel et librement accepté par les parties. Pour saisir le médiateur, le consommateur doit avoir préalablement tenté de résoudre son litige directement auprès de Caepus par réclamation écrite.
             </p>
           </div>
 
