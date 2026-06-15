@@ -127,7 +127,7 @@ const Contact = () => {
             <div>
               <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">Téléphone</p>
               <p className="text-sm">
-                <a href="tel:+33787283859" className="hover:text-primary transition-colors">07 87 28 38 59</a>
+                <a href="tel:+33777964496" className="hover:text-primary transition-colors">07 77 96 44 96</a>
               </p>
             </div>
             <div>
